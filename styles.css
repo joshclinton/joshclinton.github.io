@@ -433,6 +433,8 @@ a.wt-card:hover .ct { color: var(--oxblood); }
   margin: 0 0 2.6rem;
 }
 .life-row.reverse { grid-template-columns: 1fr 15rem; }
+.life-row.big-img { grid-template-columns: 20rem 1fr; }
+.life-row.big-img.reverse { grid-template-columns: 1fr 20rem; }
 .life-row.reverse .life-img  { grid-column: 2; grid-row: 1; }
 .life-row.reverse .life-text { grid-column: 1; grid-row: 1; }
 .life-img { margin: 0; }
@@ -447,7 +449,7 @@ a.wt-card:hover .ct { color: var(--oxblood); }
 .life-close { max-width: var(--measure); margin: 0; }
 
 @media (max-width: 760px) {
-  .life-row, .life-row.reverse { grid-template-columns: 1fr; gap: 1.2rem; }
+  .life-row, .life-row.reverse, .life-row.big-img, .life-row.big-img.reverse { grid-template-columns: 1fr; gap: 1.2rem; }
   .life-row.reverse .life-img, .life-row.reverse .life-text { grid-column: auto; grid-row: auto; }
   .life-img { max-width: 15rem; }
 }
