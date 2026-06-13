@@ -529,13 +529,15 @@ a.wt-card:hover .ct { color: var(--oxblood); }
   .research-grid { grid-template-columns: 1fr; gap: 1.4rem; }
   .topics { position: static; }
   .topics .topic-list {
-    display: flex; gap: 0.4rem; overflow-x: auto; padding-bottom: 0.5rem;
+    display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; padding-bottom: 0.6rem;
     border-bottom: 1px solid var(--rule-ink);
   }
   .topic {
-    flex: none; border-left: 0; border-bottom: 3px solid transparent;
-    padding: 0.4rem 0.6rem; white-space: nowrap;
+    flex: none; width: auto; gap: 0.45rem; margin: 0;
+    border-left: 0; border-bottom: 2px solid transparent;
+    padding: 0.3rem 0; white-space: nowrap;
   }
+  .topic--working { border-bottom: 2px solid transparent; }  /* drop the desktop separator on phones */
   .topic:hover, .topic.active { border-left: 0; }
   .topic.active { border-bottom-color: var(--oxblood); }
   .topic:hover { border-bottom-color: var(--gold); }
