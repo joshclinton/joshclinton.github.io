@@ -13,11 +13,18 @@ published website.)
   (`:root`). See `README.md` for the full map.
 
 ## 1. Connect the custom domain (joshclinton.com)
-- **Registrar: Network Solutions** (networksolutions.com) — the company Wix recommended. Log in there.
-- **DNS is currently run by Wix** (nameservers NS2/NS3.WIXDNS.NET). So either edit the
-  DNS records inside Wix, or point the nameservers back to Network Solutions and edit there.
-- When ready: add a `CNAME` file (`joshclinton.com`) to the repo, set the custom domain in
-  the repo's Settings → Pages, update DNS to point at GitHub Pages, then turn Wix off. Reversible.
+- **Bought through Wix** (Wix is the reseller; Network Solutions is the backend registrar
+  of record). DNS is run by Wix (nameservers WIXDNS.NET), so manage everything from the
+  **Wix account** — likely no need to touch Network Solutions.
+- Plan: in Wix → Domains → joshclinton.com → DNS records / Advanced, point it at GitHub Pages:
+    - Four **A** records on the root (`@`): 185.199.108.153, 185.199.109.153,
+      185.199.110.153, 185.199.111.153
+    - One **CNAME**: `www` → `joshclinton.github.io`
+  Then add a `CNAME` file containing `joshclinton.com` to this repo, and set the custom
+  domain in repo Settings → Pages (turn on Enforce HTTPS once it validates).
+- Fully reversible: to undo, point the DNS back to Wix.
+- Heads-up: Wix may nudge you to "connect to a Wix site" instead of editing raw DNS —
+  we want the raw **DNS records** option (or "connect a domain to an external site").
 
 ## 2. Track down author PDFs (these papers are DOI-only)
 - More a Molehill than a Mountain (2011)
