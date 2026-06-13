@@ -1,6 +1,3 @@
 .DS_Store
 *.tmp
 ._*
-
-# private notes, not published
-TODO.md
