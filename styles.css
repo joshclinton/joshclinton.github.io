@@ -424,6 +424,34 @@ a.wt-card:hover .ct { color: var(--oxblood); }
 .prose-page { padding: 2.6rem 0; max-width: 46rem; }
 .prose-page p { max-width: var(--measure); margin: 0 0 1.1rem; }
 
+/* image + text in aligned columns, alternating sides (no text wrapping under images) */
+.life-row {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  gap: 2.4rem;
+  align-items: start;
+  margin: 0 0 2.6rem;
+}
+.life-row.reverse { grid-template-columns: 1fr 15rem; }
+.life-row.reverse .life-img  { grid-column: 2; grid-row: 1; }
+.life-row.reverse .life-text { grid-column: 1; grid-row: 1; }
+.life-img { margin: 0; }
+.life-img .frame { border: 1px solid var(--oak); padding: 6px; background: #fff; }
+.life-img img { display: block; width: 100%; }
+.life-img figcaption {
+  color: var(--meta); font-style: italic; font-size: 0.82rem;
+  margin-top: 0.5rem; line-height: 1.45;
+}
+.life-text p { margin: 0 0 1.1rem; }
+.life-text p:last-child { margin-bottom: 0; }
+.life-close { max-width: var(--measure); margin: 0; }
+
+@media (max-width: 760px) {
+  .life-row, .life-row.reverse { grid-template-columns: 1fr; gap: 1.2rem; }
+  .life-row.reverse .life-img, .life-row.reverse .life-text { grid-column: auto; grid-row: auto; }
+  .life-img { max-width: 15rem; }
+}
+
 .art-figure { margin: 2.2rem 0; max-width: 40rem; }
 .art-figure .frame { border: 1px solid var(--oak); padding: 6px; background: var(--ground); }
 .art-figure img { display: block; width: 100%; }
