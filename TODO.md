@@ -12,19 +12,17 @@ published website.)
   (Research) and per-page data arrays (Teaching, Writing). Design tokens in `styles.css`
   (`:root`). See `README.md` for the full map.
 
-## 1. Connect the custom domain (joshclinton.com)
-- **Bought through Wix** (Wix is the reseller; Network Solutions is the backend registrar
-  of record). DNS is run by Wix (nameservers WIXDNS.NET), so manage everything from the
-  **Wix account** — likely no need to touch Network Solutions.
-- Plan: in Wix → Domains → joshclinton.com → DNS records / Advanced, point it at GitHub Pages:
-    - Four **A** records on the root (`@`): 185.199.108.153, 185.199.109.153,
-      185.199.110.153, 185.199.111.153
-    - One **CNAME**: `www` → `joshclinton.github.io`
-  Then add a `CNAME` file containing `joshclinton.com` to this repo, and set the custom
-  domain in repo Settings → Pages (turn on Enforce HTTPS once it validates).
-- Fully reversible: to undo, point the DNS back to Wix.
-- Heads-up: Wix may nudge you to "connect to a Wix site" instead of editing raw DNS —
-  we want the raw **DNS records** option (or "connect a domain to an external site").
+## 1. Connect the custom domain (joshclinton.com) — ✅ DONE 2026-06-13
+- Live at **https://joshclinton.com** (and www → redirects to apex), served by GitHub
+  Pages over HTTPS. The `CNAME` file in this repo holds `joshclinton.com`.
+- What we did in **Wix → Domains → joshclinton.com → Manage DNS records**:
+    - Deleted the 3 Wix A records and added four **A** records on the root pointing at
+      GitHub Pages: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+    - Replaced the `www` CNAME (was `cdn1.wixdns.net`) with `www` → `joshclinton.github.io`
+    - No MX/TXT/SRV existed (no email), NS left as Wix (not editable).
+- **To revert to Wix** if ever needed: restore A records 185.230.63.171 / .186 / .107 and
+  www CNAME → `cdn1.wixdns.net`, and remove the custom domain in repo Settings → Pages.
+- Remaining nicety: confirm **Enforce HTTPS** is ticked in Settings → Pages.
 
 ## 2. Track down author PDFs (these papers are DOI-only)
 - More a Molehill than a Mountain (2011)
