@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Writing &amp; Talks · Josh Clinton</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+<meta name="description" content="Public writing, talks, and lectures by Joshua D. Clinton on the use and misuse of data and polling.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Writing & Talks · Josh Clinton">
+<meta property="og:description" content="Public writing, talks, and lectures by Joshua D. Clinton on the use and misuse of data and polling.">
+<meta property="og:image" content="https://joshclinton.com/assets/clinton-portrait.jpg">
+<meta property="og:url" content="https://joshclinton.com/writing.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="wordmark">
+      <span class="peg"></span>
+      <span class="name">Josh Clinton</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="writing.html" class="active">Writing &amp; Talks</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="assets/clinton-cv.pdf" target="_blank">CV</a>
+      <a href="personal.html">Personal</a>
+    </nav>
+  </header>
+
+  <main class="writing">
+    <h1 class="section-title">Writing &amp; Talks</h1>
+    <p class="research-intro">Public-facing writing, talks, and lectures that I have
+    “recently” given on various topics.</p>
+
+    <section class="wt-group">
+      <h2 class="wt-group-title">Lectures — watch here</h2>
+      <p class="wt-note">Produced for Vanderbilt students during pandemic-era remote
+      instruction, and kept online rather than discarded.</p>
+      <div class="wt-cards" id="lectures"></div>
+      <p class="wt-more"><a href="https://www.youtube.com/channel/UCF3PttQbK7zE25NNN0tWUFg" target="_blank">All lectures on YouTube →</a></p>
+    </section>
+
+    <section class="wt-group">
+      <h2 class="wt-group-title">Public writing &amp; commentary</h2>
+      <div class="wt-cards" id="articles"></div>
+    </section>
+
+    <section class="wt-group">
+      <h2 class="wt-group-title">Talks &amp; reports</h2>
+      <div class="wt-cards" id="talks"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>Joshua D. Clinton · Vanderbilt University</span>
+    <span>Nashville, Tennessee</span>
+  </footer>
+
+</div>
+
+<script>
+/* ---- data ---- */
+const LECTURES = [
+  { vid: "hOYbIcTBUH8", title: "What Is the Point of Pre-Election Polling, and Why Are There So Many Polls?", date: "Nov 21, 2020" },
+  { vid: "Om-TQaWtR7A", title: "History of Pre-Election Polling in the US", date: "Nov 30, 2020" },
+  { vid: "mefE3RC_wsQ", title: "Ideas and Issues in Public Opinion Polling: Part 1 of 2", date: "Dec 11, 2020" },
+  { vid: "7nSpxqfI6uc", title: "Ideas and Issues in Public Opinion Polling: Part 2 of 2", date: "Dec 11, 2020" },
+  { vid: "aPod4hKi3ko", title: "What Happened in 2016 with the Polls?", date: "Dec 11, 2020" },
+  { vid: "pc94czXG2SQ", title: "Election Administration in the United States: A (brief) Overview", date: "Dec 11, 2020" },
+  { vid: "Tmtb4_M5xCw", title: "The Electoral College", date: "Dec 11, 2020" }
+];
+
+const ARTICLES = [
+  {
+    title: "What Early Voting Data Shows About New Voters, a Group That Could Swing the 2024 Election",
+    outlet: "NBC News", year: 2024, img: "assets/nbc.jpg",
+    url: "https://www.nbcnews.com/politics/2024-election/early-voting-data-shows-new-voters-group-swing-election-rcna178187",
+    blurb: "An NBC News Decision Desk analysis of what new 2024 voters signaled for the swing states."
+  },
+  {
+    title: "Once Again, Polls Missed a Decisive Slice of Trump Voters in 2024",
+    outlet: "NBC News", year: 2024, img: "assets/nbc2.jpg",
+    url: "https://www.nbcnews.com/politics/2024-election/-polls-missed-decisive-slice-trump-voters-2024-rcna182488",
+    blurb: "Why public polling again understated Republican support, and what it means for reading the next round."
+  },
+  {
+    title: "A Lot of State Poll Results Show Ties. So Are They Tied Because of Voters — or Pollsters?",
+    outlet: "NBC News", year: 2024, img: "assets/nbc3.jpg",
+    url: "https://www.nbcnews.com/politics/2024-election/state-poll-results-show-ties-are-tied-voters-pollsters-rcna177703",
+    blurb: "Why so many state polls landed on ties, and how much of that reflects pollster choices rather than the electorate."
+  },
+  {
+    title: "Poll Results Depend on Pollster Choices as Much as Voters’ Decisions",
+    outlet: "Good Authority", year: 2024, img: "assets/goodauthority.jpg",
+    url: "https://goodauthority.org/news/election-poll-vote2024-data-pollster-choices-weighting/",
+    blurb: "How defensible weighting choices can move the reported Harris–Trump margin by several points."
+  }
+];
+
+const TALKS = [
+  {
+    title: "Disrupting Distrust in Political Polling",
+    outlet: "Quantum Potential Podcast", date: "May 15, 2025", vid: "zrgpAworqLk",
+    metaText: "Quantum Potential Podcast (Vanderbilt) · May 15, 2025",
+    thumb: "assets/quantum_clinton.jpg",
+    blurb: "An episode of Vanderbilt’s <em>Quantum Potential</em> podcast, in conversation with Provost C. Cybele Raver, on how transparency and statistical literacy can disrupt Americans’ distrust in polling."
+  },
+  {
+    title: "Polling the Public on Politics",
+    outlet: "C-SPAN", date: "April 11, 2024", img: "assets/cspan_crop.jpg", video: true,
+    url: "https://www.c-span.org/video/?534833-1/polling-public-politics",
+    blurb: "Recorded at Andrew Jackson’s Hermitage in Nashville, Tennessee. A public conversation on what polls can and cannot tell us."
+  },
+  {
+    title: "Task Force on 2020 Pre-Election Polling: An Evaluation of the 2020 General Election Polls",
+    outlet: "AAPOR", year: 2021, img: "assets/aapor2020.jpg", contain: true,
+    url: "https://aapor.org/wp-content/uploads/2022/11/AAPOR-Task-Force-on-2020-Pre-Election-Polling_Report-FNL.pdf",
+    blurb: "The AAPOR task-force evaluation of the 2020 general-election polls, which Clinton chaired."
+  }
+];
+
+/* ---- render ---- */
+function videoCard(it) {
+  const meta = it.metaText
+    || (it.outlet ? `${it.outlet}${it.date ? " · " + it.date : (it.year ? " · " + it.year : "")}` : "");
+  const blurb = it.blurb ? `<p class="cb">${it.blurb}</p>` : "";
+  const thumbSrc = it.thumb || `assets/yt_${it.vid}.jpg`;
+  return `<div class="wt-card" data-vid="${it.vid}">
+    <div class="thumb">
+      <img src="${thumbSrc}" alt="">
+      <div class="play"><span></span></div>
+    </div>
+    <div class="body"><span class="ct">${it.title}</span>
+      <p class="cm">${meta}</p>${blurb}</div>
+  </div>`;
+}
+function linkCard(it) {
+  const thumb = it.img
+    ? `<div class="thumb ${it.contain ? "contain" : ""}"><img src="${it.img}" alt="">${it.video ? '<div class="play"><span></span></div>' : ''}</div>`
+    : `<div class="thumb tile"><span class="tile-outlet">${it.tile || it.outlet}</span>${it.video ? '<div class="play"><span></span></div>' : ''}</div>`;
+  return `<a class="wt-card" href="${it.url}" target="_blank">
+    ${thumb}
+    <div class="body">
+      <span class="ct">${it.title}</span>
+      <p class="cm">${it.outlet}${it.date ? " · " + it.date : (it.year ? " · " + it.year : "")}</p>
+      <p class="cb">${it.blurb}</p>
+    </div>
+  </a>`;
+}
+
+document.getElementById("lectures").innerHTML =
+  LECTURES.map(l => videoCard({ ...l, metaText: "YouTube · Lecture · " + l.date })).join("");
+document.getElementById("articles").innerHTML = ARTICLES.map(linkCard).join("");
+document.getElementById("talks").innerHTML =
+  TALKS.map(it => it.vid ? videoCard(it) : linkCard(it)).join("");
+
+/* click-to-play: swap thumbnail for the embedded player */
+document.querySelectorAll(".wt-card[data-vid] .thumb").forEach(t => {
+  t.addEventListener("click", () => {
+    const vid = t.closest(".wt-card").dataset.vid;
+    t.innerHTML = `<iframe src="https://www.youtube.com/embed/${vid}?autoplay=1&rel=0"
+      title="lecture" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>`;
+  });
+});
+</script>
+</body>
+</html>

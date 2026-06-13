@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Josh Clinton</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+<meta name="description" content="Publications by Joshua D. Clinton on elections, public opinion, Congress, polling, and statistical methodology.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Research · Josh Clinton">
+<meta property="og:description" content="Publications by Joshua D. Clinton on elections, public opinion, Congress, polling, and statistical methodology.">
+<meta property="og:image" content="https://joshclinton.com/assets/clinton-portrait.jpg">
+<meta property="og:url" content="https://joshclinton.com/research.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="wordmark">
+      <span class="peg"></span>
+      <span class="name">Josh Clinton</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">About</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="writing.html">Writing &amp; Talks</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="assets/clinton-cv.pdf" target="_blank">CV</a>
+      <a href="personal.html">Personal</a>
+    </nav>
+  </header>
+
+  <main class="research">
+    <h1 class="section-title">Research</h1>
+    <p class="research-intro">This page contains papers I have published, papers I am
+    working on (Working papers), and papers I worked on but was unable to publish
+    (Unpublished) that I still think may be of interest or use, if only as an example of
+    what not to do. Select
+    a topic to filter, a paper may carry several, and click a title to read the abstract.</p>
+
+    <p class="data-links">
+      <span class="label">Data &amp; code</span>
+      <a href="https://dataverse.harvard.edu/dataverse/jclinton" target="_blank">Harvard Dataverse</a>
+      <a href="https://github.com/joshclinton" target="_blank">GitHub</a>
+    </p>
+
+    <div class="research-grid">
+      <aside class="topics">
+        <h2>Topics</h2>
+        <div class="topic-list" id="topicList"><!-- rendered by JS --></div>
+      </aside>
+
+      <section>
+        <p class="result-count" id="resultCount"></p>
+        <div class="papers" id="paperList"><!-- rendered by JS --></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <span>Joshua D. Clinton · Vanderbilt University</span>
+    <span>Nashville, Tennessee</span>
+  </footer>
+
+</div>
+
+<!-- Real corpus, built from /Published. Defines PUBLICATIONS and TOPIC_ORDER. -->
+<script src="publications.js"></script>
+<script>
+/* ---- render (data lives in publications.js) ---------------------- */
+let activeTopic = null;
+
+function topicCounts() {
+  const c = {};
+  TOPIC_ORDER.forEach(t => c[t] = 0);
+  PUBLICATIONS.forEach(p => p.topics.forEach(t => { if (t in c) c[t]++; }));
+  return c;
+}
+
+function renderTopics() {
+  const counts = topicCounts();
+  const el = document.getElementById("topicList");
+  const workingCount = PUBLICATIONS.filter(p => p.type === "working").length;
+  const unpubCount = PUBLICATIONS.filter(p => p.type === "unpublished").length;
+  const all = `<button class="topic ${activeTopic === null ? "active" : ""}" data-topic="">
+      <span>All work</span><span class="count">${PUBLICATIONS.length}</span></button>`;
+  const working = `<button class="topic ${activeTopic === "__working__" ? "active" : ""}" data-topic="__working__">
+      <span>Working papers</span><span class="count">${workingCount}</span></button>`;
+  const unpub = `<button class="topic topic--working ${activeTopic === "__unpublished__" ? "active" : ""}" data-topic="__unpublished__">
+      <span>Unpublished</span><span class="count">${unpubCount}</span></button>`;
+  const items = TOPIC_ORDER.map(t =>
+    `<button class="topic topic--cat ${activeTopic === t ? "active" : ""}" data-topic="${t}">
+      <span>${t}</span><span class="count">${counts[t]}</span></button>`).join("");
+  el.innerHTML = all + working + unpub + items;
+  el.querySelectorAll(".topic").forEach(b =>
+    b.addEventListener("click", () => { activeTopic = b.dataset.topic || null; render(); }));
+}
+
+// journal tiers (1 = highest) used only as a within-year tiebreaker. Adjust freely.
+const VENUE_RANK = {
+  "American Political Science Review": 1,
+  "Proceedings of the National Academy of Sciences": 2,
+  "Science Advances": 2,
+  "American Journal of Political Science": 2,
+  "Journal of Politics": 3,
+  "British Journal of Political Science": 4,
+  "Quarterly Journal of Political Science": 4,
+  "Political Analysis": 4,
+  "Political Science Research & Methods": 4,
+  "Public Opinion Quarterly": 5,
+  "Annual Review of Political Science": 5,
+  "PNAS Nexus": 5,
+  "Journal of Conflict Resolution": 6,
+  "Legislative Studies Quarterly": 6,
+  "Political Communication": 6,
+  "Journal of Public Policy": 6,
+  "Journal of Health Politics, Policy and Law": 6,
+  "Election Law Journal": 6,
+  "Public Choice": 6,
+  "PS: Political Science & Politics": 7,
+};
+
+function renderPapers() {
+  // published newest-first (journal tier within a year); working papers, then unpublished, last
+  const isWP = p => p.type === "working" || p.type === "unpublished";
+  const yearRank  = p => p.type === "working" ? -1 : p.type === "unpublished" ? -2 : p.year;
+  const venueScore = p =>
+    p.type === "chapter" ? 8 :
+    p.type === "report"  ? 9 :
+    (VENUE_RANK[p.venue] ?? 6.5);
+  const matches = p =>
+    activeTopic === null ? true :
+    activeTopic === "__working__" ? p.type === "working" :
+    activeTopic === "__unpublished__" ? p.type === "unpublished" :
+    p.topics.includes(activeTopic);
+  const list = PUBLICATIONS.filter(matches)
+    .sort((a, b) => (yearRank(b) - yearRank(a)) || (venueScore(a) - venueScore(b)));
+
+  document.getElementById("resultCount").textContent =
+    activeTopic === null ? `${list.length} works` :
+    activeTopic === "__working__" ? `${list.length} working papers` :
+    activeTopic === "__unpublished__" ? `${list.length} unpublished` :
+    `${list.length} in ${activeTopic.replace(/\b\w/g, c => c.toUpperCase())}`;
+
+  document.getElementById("paperList").innerHTML = list.map((p) => {
+    const links = [];
+    if (p.links.pdf)  links.push(`<a href="${p.links.pdf}" target="_blank">PDF</a>`);
+    if (p.links.doi)  links.push(`<a href="${p.links.doi}" target="_blank">${isWP(p) ? "Preprint" : "Journal / DOI"}</a>`);
+    if (p.links.data) links.push(`<a href="${p.links.data}">Replication data</a>`);
+    const tags = p.topics.map(t => `<span class="tag">${t}</span>`).join("");
+    const awardEl = p.award ? `<p class="paper-award">${p.award}</p>` : "";
+    const noteEl  = p.note  ? `<p class="paper-note">${p.note}</p>` : "";
+    const hasAbstract = Boolean(p.abstract);
+    const titleEl = hasAbstract
+      ? `<button class="paper-title">${p.title}</button>`
+      : `<span class="paper-title paper-title--static">${p.title}</span>`;
+    const abstractEl = hasAbstract ? `<div class="paper-abstract"><p>${p.abstract}</p></div>` : "";
+    const flagText = p.type === "working" ? "Working paper" : p.type === "unpublished" ? "Unpublished" : "";
+    const flag = flagText ? `<span class="paper-flag">${flagText}</span>` : "";
+    const meta = isWP(p)
+      ? `${p.authors}${p.status ? ` · <span class="venue">${p.status}</span>` : ""}`
+      : `${p.authors} · <span class="venue">${p.venue}</span>, ${p.year}`;
+    return `<article class="paper ${p.featured ? "is-featured" : ""}">
+      ${flag}
+      ${titleEl}
+      <p class="paper-meta">${meta}</p>
+      <div class="paper-topics">${tags}</div>
+      ${awardEl}${noteEl}
+      ${abstractEl}
+      <div class="paper-actions">${links.join("")}</div>
+    </article>`;
+  }).join("");
+
+  document.querySelectorAll("button.paper-title").forEach(b =>
+    b.addEventListener("click", () => b.closest(".paper").classList.toggle("open")));
+}
+
+function render() { renderTopics(); renderPapers(); }
+render();
+</script>
+</body>
+</html>

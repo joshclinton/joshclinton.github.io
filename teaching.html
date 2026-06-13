@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teaching · Josh Clinton</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+<meta name="description" content="Courses taught by Joshua D. Clinton at Vanderbilt, from U.S. Elections to graduate political methodology.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Teaching · Josh Clinton">
+<meta property="og:description" content="Courses taught by Joshua D. Clinton at Vanderbilt, from U.S. Elections to graduate political methodology.">
+<meta property="og:image" content="https://joshclinton.com/assets/clinton-portrait.jpg">
+<meta property="og:url" content="https://joshclinton.com/teaching.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="wordmark">
+      <span class="peg"></span>
+      <span class="name">Josh Clinton</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="writing.html">Writing &amp; Talks</a>
+      <a href="teaching.html" class="active">Teaching</a>
+      <a href="assets/clinton-cv.pdf" target="_blank">CV</a>
+      <a href="personal.html">Personal</a>
+    </nav>
+  </header>
+
+  <main class="teaching">
+    <h1 class="section-title">Teaching</h1>
+    <p class="teaching-intro">Some recent and upcoming courses at Vanderbilt, across the
+    undergraduate and graduate curriculum.</p>
+
+    <div id="courseList"><!-- rendered by JS --></div>
+  </main>
+
+  <footer class="foot">
+    <span>Joshua D. Clinton · Vanderbilt University</span>
+    <span>Nashville, Tennessee</span>
+  </footer>
+
+</div>
+
+<script>
+const COURSES = [
+  { term: "Fall 2026",   num: "PSCI 2300", title: "Introduction to Data Science for Politics", level: "Undergraduate", upcoming: true,
+    img: "assets/datascience-plot.png",
+    caption: "Estimating how constituent opinion relates to a legislator’s votes: the kind of relationship the course teaches you to fit, and to question.",
+    desc: "How can we use polls to predict election outcomes? What is the impact of minimum wage laws on employment? How do we know who wrote the Federalist Papers? When does a correlation indicate causation? This course will teach you how to address these and other social science questions through data analysis. The course will introduce basic principles of statistical inference and programming skills for data analysis with the goal of providing you with the foundation necessary to analyze data in your own research and to also become more informed and critical consumers of statistical claims made in the news media, in policy reports, and in academic research." },
+  { term: "Spring 2026", num: "PSCI 2240", title: "Political Parties", level: "Undergraduate",
+    img: "assets/pugilists.jpg",
+    caption: "“Congressional Pugilists,” 1798: partisan combat on the House floor.",
+    desc: "This course is about political parties in the United States: why they arose, how they evolved, and how they both shape and reflect the nature of politics. It is not a class about Democratic ideas versus Republican ideas, and we will not debate partisan issues aside from how those issues reflect societal and political circumstances. The goal is to use political parties as an exemplar of how humans have organized themselves to solve enduring problems of coordination, cooperation, and the quest for power and influence. Our application is to parties, but the lessons should extend well beyond politics." },
+  { term: "Spring 2025", num: "PSCI 8358", title: "Topics in Political Methodology", level: "Graduate",
+    img: "assets/cjr-eq1.png",
+    caption: "The roll-call voting model, from Clinton, Jackman &amp; Rivers (2004).",
+    url: "https://doi.org/10.1017/s0003055404001194",
+    linkText: "Read the paper →",
+    desc: [
+      "This graduate course covers statistical methods and paradigms more advanced than simple linear regression, which often, but not always, involve categorical dependent variables of various types. It introduces maximum likelihood and Bayesian statistics as frameworks for deriving estimators and conducting inference, highlighting where the two approaches agree and where they differ.",
+      "The emphasis is on applying theory, not only deriving it. We derive estimators, but we also focus on implementing models so you gain familiarity with their actual use and a sense of why they improve on the linear regression you already know well. Part of the course is devoted to workflow: best practices for replicable, publication-ready analysis and the visualizations and tables that good work requires. Throughout, we read and sometimes replicate published articles to connect the methods to real political science research."
+    ] },
+  { term: "Fall 2024",   num: "PSCI 1150", title: "U.S. Elections", level: "Undergraduate",
+    img: "assets/elections-photo.jpg",
+    caption: "Photo: Vanderbilt University.",
+    linkText: "Read the story →",
+    desc: "This course introduced students to the American election system and its relationship to democracy. Our primary focus was on the presidential election, with particular attention paid to the events of the 2024 campaign and how to situate the 2024 election within a broader historical and institutional context. We also addressed congressional elections and various local elections. We sought to examine and explain how election processes work to better understand the events around us. The 2024 campaign provided an ongoing series of events that helped make the material “come to life,” offering helpful lessons for how the American political system works.",
+    note: "With 1,100 students enrolled, the largest elective class in Vanderbilt’s history.",
+    url: "https://news.vanderbilt.edu/2024/10/11/vanderbilt-elections-course-breaks-record-as-largest-elective-class-in-the-universitys-history/" }
+];
+
+document.getElementById("courseList").innerHTML = COURSES.map(c => {
+  const badge = c.upcoming ? '<span class="course-badge">Upcoming</span>' : '';
+  const note = c.note ? `<p class="course-note">${c.note}</p>` : '';
+  const desc = c.desc
+    ? (Array.isArray(c.desc) ? c.desc : [c.desc]).map(p => `<p class="course-desc">${p}</p>`).join('')
+    : '';
+  const caption = c.img && c.caption
+    ? `<p class="course-cap">${c.caption}${c.url ? ` <a href="${c.url}" target="_blank">${c.linkText || 'Read more →'}</a>` : ''}</p>`
+    : '';
+  const media = c.img
+    ? `<div class="course-figure"><img src="${c.img}" alt="${c.title}"></div>${caption}`
+    : `<div class="course-tile"><span class="ct-num">${c.num}</span></div>`;
+  return `<article class="course-row">
+     <div class="course-media">${media}</div>
+     <div class="course-detail">
+       <h2 class="course-name">${c.title}${badge}</h2>
+       <p class="course-meta"><span class="course-num">${c.num}</span> · ${c.level}</p>
+       ${desc}${note}
+     </div>
+   </article>`;
+}).join("");
+</script>
+</body>
+</html>
