@@ -141,7 +141,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/C_PS2026.pdf", doi: "https://doi.org/10.1017/S1049096525101662" }
   },
   {
-    title: "Donations and Dollars: Characterizing the Political Views of Donors and the Affluent",
+    title: "Donors and Dollars: Comparing the Policy Views of Donors and the Affluent",
     authors: "Joshua D. Clinton, Michael Barber, Brandice Canes-Wrone, Gregory A. Huber",
     venue: "Journal of Politics", year: 2026, type: "article", featured: false,
     topics: ["elections", "public opinion"],
@@ -180,14 +180,14 @@ const PUBLICATIONS = [
     links: { doi: "https://doi.org/10.1093/pnasnexus/pgad049" }
   },
   {
-    title: "Reluctant Republicans? Partisan Non-Response and the Accuracy of 2020 Presidential Pre-Election Polling",
+    title: "Reluctant Republicans, Eager Democrats?",
     authors: "Joshua D. Clinton, John S. Lapinski, Marc J. Trussler",
     venue: "Public Opinion Quarterly", year: 2022, type: "article", featured: false,
     topics: ["polling", "elections"],
     links: { doi: "https://doi.org/10.1093/poq/nfac011" }
   },
   {
-    title: "Trumped by Trump? Public Support for Vote By Mail Voting in Response to the COVID-19 Pandemic",
+    title: "Trumped by Trump? Public Support for Mail Voting in Response to the COVID-19 Pandemic",
     authors: "Joshua D. Clinton, John S. Lapinski, Sarah Lentz, Stephen Pettigrew",
     venue: "Election Law Journal", year: 2022, type: "article", featured: false,
     topics: ["elections", "public opinion"],
@@ -195,13 +195,13 @@ const PUBLICATIONS = [
   },
   {
     title: "Partisan Pandemic: How Partisanship and Public Health Concerns Affect Individuals’ Social Mobility During COVID-19",
-    authors: "Joshua D. Clinton, Jon Cohen, John S. Lapinski, Marc Trussler",
+    authors: "Joshua D. Clinton, Jon Cohen, John S. Lapinski, Marc J. Trussler",
     venue: "Science Advances", year: 2020, type: "article", featured: false,
     topics: ["public opinion"],
     links: { pdf: "assets/papers/CCLT_PIDCOVID_PREPRINT.pdf", doi: "https://doi.org/10.1126/sciadv.abd7204" }
   },
   {
-    title: "Market Matters: The Effect of Big-City News on Rural America During the COVID-19 Pandemic",
+    title: "The Effect of Big-City News on Rural America During the COVID-19 Pandemic",
     authors: "Joshua D. Clinton, Eunji Kim, Michael E. Shepherd",
     venue: "Proceedings of the National Academy of Sciences", year: 2020, type: "article", featured: false,
     topics: ["public opinion"],
@@ -224,7 +224,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/CEFS_PSRM_PPChangeAndParticipation.pdf", doi: "https://doi.org/10.1017/psrm.2020.43" }
   },
   {
-    title: "Policy Effects, Partisanship, and Elections: How Medicaid Expansion Affected Opinions of the Affordable Care Act",
+    title: "Policy Effects, Partisanship, and Elections: How Medicaid Expansion Affected Public Opinion toward the Affordable Care Act",
     authors: "Joshua D. Clinton, Michael W. Sances",
     venue: "Journal of Politics", year: 2020, type: "article", featured: false,
     topics: ["public opinion", "elections"],
@@ -247,7 +247,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/SC_JHPPL.pdf", doi: "https://doi.org/10.1215/03616878-7366988" }
   },
   {
-    title: "Knock Out Blows or the Status Quo? Momentum in the 2016 Primaries",
+    title: "Knockout Blows or the Status Quo? Momentum in the 2016 Primaries",
     authors: "Joshua D. Clinton, Andrew M. Engelhardt, Marc J. Trussler",
     venue: "Journal of Politics", year: 2019, type: "article", featured: false,
     topics: ["elections", "polling", "public opinion"],
@@ -255,7 +255,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/CET_JOP2019.pdf", doi: "https://doi.org/10.1086/703383" }
   },
   {
-    title: "Lawmaking in the U.S: American Legislatures and Lawmaking, 1997–2011",
+    title: "Lawmaking in American Legislatures: An Empirical Investigation",
     authors: "Joshua D. Clinton, Mark D. Richardson",
     venue: "Journal of Public Policy", year: 2019, type: "article", featured: false,
     topics: ["Congress", "methodology"],
@@ -287,7 +287,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/RCL_JOP2017.pdf", doi: "https://doi.org/10.1086/694846" }
   },
   {
-    title: "Does Who Owns the News Matter for the News?",
+    title: "Changing Owners, Changing Content: Does Who Owns the News Matter for the News?",
     authors: "Joshua D. Clinton, Allison Archer",
     venue: "Political Communication", year: 2018, type: "article", featured: false,
     topics: ["public opinion"],
@@ -295,7 +295,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/AC_PC2017.pdf", doi: "https://doi.org/10.1080/10584609.2017.1375581" }
   },
   {
-    title: "Coding and Scaling the Ideological Direction and Content of Policies",
+    title: "Coding the Ideological Direction and Content of Policies",
     authors: "Joshua D. Clinton",
     venue: "Annual Review of Political Science", year: 2017, type: "article", featured: true,
     topics: ["methodology", "Congress"],
@@ -303,7 +303,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/C_AR2017.pdf", doi: "https://doi.org/10.1146/annurev-polisci-062615-031524" }
   },
   {
-    title: "A House Divided? Political Conflict and Polarization in the U.S. Congress, 1877–2011",
+    title: "A House Divided? Roll Calls, Polarization, and Policy Differences in the U.S. House, 1877–2011",
     authors: "Joshua D. Clinton, David A. Bateman, John S. Lapinski",
     venue: "American Journal of Political Science", year: 2017, type: "article", featured: true,
     topics: ["Congress", "methodology"],
@@ -319,7 +319,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/BC_JCR2014.pdf", doi: "https://doi.org/10.1177/0022002714560348" }
   },
   {
-    title: "Public Information, Public Learning, and Public Opinion: The Prospect for Bottom-Up Accountability in Education Policy",
+    title: "Public Information, Public Learning, and Public Opinion: Democratic Accountability in Education Policy",
     authors: "Joshua D. Clinton, Jason Grissom",
     venue: "Journal of Public Policy", year: 2015, type: "article", featured: false,
     topics: ["public opinion"],
@@ -327,7 +327,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/CG_JPP2015.pdf", doi: "https://doi.org/10.1017/s0143814x14000312" }
   },
   {
-    title: "The National News Media’s Effect on Congress: How Fox News Affected Representatives in Congress",
+    title: "The National News Media’s Effect on Congress: How Fox News Affected Elites in Congress",
     authors: "Joshua D. Clinton, Ted Enamorado",
     venue: "Journal of Politics", year: 2014, type: "article", featured: false,
     topics: ["Congress", "public opinion"],
@@ -335,7 +335,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/CE_JOP2014.pdf", doi: "https://doi.org/10.1017/s0022381614000425" }
   },
   {
-    title: "Political Influence in the Bureaucracy: The Irony of Congressional Oversight",
+    title: "Influencing the Bureaucracy: The Irony of Congressional Oversight",
     authors: "Joshua D. Clinton, David Lewis, Jen Selin",
     venue: "American Journal of Political Science", year: 2014, type: "article", featured: false,
     topics: ["Congress", "methodology"],
@@ -389,7 +389,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/CJ_LSQ2009.pdf", doi: "https://doi.org/10.3162/036298009789869691" }
   },
   {
-    title: "Laws and Roll Calls in the U.S. Congress, 1889–1994",
+    title: "Laws and Roll Calls in the U.S. Congress, 1891–1994",
     authors: "Joshua D. Clinton, John Lapinski",
     venue: "Legislative Studies Quarterly", year: 2008, type: "article", featured: false,
     topics: ["Congress", "methodology"],
@@ -445,7 +445,7 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/CL_AJPS2006.pdf", doi: "https://doi.org/10.1111/j.1540-5907.2006.00181.x" }
   },
   {
-    title: "The Statistical Analysis of Roll Call Voting: A Unified Approach",
+    title: "The Statistical Analysis of Roll Call Data",
     authors: "Joshua D. Clinton, Simon Jackman, Doug Rivers",
     venue: "American Political Science Review", year: 2004, type: "article", featured: true,
     topics: ["methodology", "Congress"],
@@ -453,16 +453,16 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/CJR_APSR2004.pdf", doi: "https://doi.org/10.1017/s0003055404001194" }
   },
   {
-    title: "Testing Accounts of Legislative Strategic Voting: The Compromise of 1790",
+    title: "Testing Explanations of Strategic Voting in Legislatures: A Reexamination of the Compromise of 1790",
     authors: "Joshua D. Clinton, Adam Meirowitz",
     venue: "American Journal of Political Science", year: 2004, type: "article", featured: false,
     topics: ["Congress", "methodology"],
     award: "Winner, 2002 Robert H. Durr Award.",
     abstract: "We present a method that unifies theory, history, and measurement, then use first-Congress voting data to subject the traditional account of the Compromise of 1790 to a statistical test, finding reason to doubt it.",
-    links: { pdf: "assets/papers/CM_AJPS2004.pdf", doi: "https://doi.org/10.2307/1519927" }
+    links: { pdf: "assets/papers/CM_AJPS2004.pdf", doi: "https://doi.org/10.1111/j.0092-5853.2004..x" }
   },
   {
-    title: "An Experimental Study of Political Advertising Effects in the 2000 Presidential Election",
+    title: "‘Targeted’ Advertising and Voter Turnout: An Experimental Study of the 2000 Presidential Election",
     authors: "Joshua D. Clinton, John Lapinski",
     venue: "Journal of Politics", year: 2004, type: "article", featured: false,
     topics: ["elections"],
@@ -497,7 +497,7 @@ const PUBLICATIONS = [
   /* ===================== BOOK CHAPTERS ===================== */
   {
     title: "Public Opinion in the Age of AI",
-    authors: "Joshua D. Clinton (Chair), Soubhik Barari, Ethan Busby, Trent D. Buskirk, Raymond Duch, Anna-Carolina Haensch, D. Sunshine Hillygus, Courtney Kennedy, Kevin Munger, Douglas Rivers",
+    authors: "Joshua D. Clinton (Chair), Soubhik Barari, Ethan Busby, Trent D. Buskirk, Raymond Duch, Anna-Carolina Haensch, D. Sunshine Hillygus, Courtney Kennedy, Kevin Munger, Douglas Rivers, Sean Westwood",
     venue: "APSA Task Force on Artificial Intelligence; in Artificial Intelligence, Politics and Political Science (Persily & Tucker, eds.), Cambridge University Press",
     year: 2026, type: "chapter", featured: false,
     topics: ["polling", "public opinion", "data science"],
