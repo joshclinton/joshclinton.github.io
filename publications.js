@@ -70,6 +70,7 @@ const PUBLICATIONS = [
     venue: "", year: 2026, type: "working", featured: false,
     status: "Working paper",
     topics: ["data science", "methodology"],
+    abstract: "Can recursive AI-mediated research proposals narrow the intellectual environment from which future scholarship is produced? Titles and abstracts matter because conferences can select participants on the basis of proposals rather than finished papers, making proposal generation a consequential stage of scholarly agenda formation. We develop an argument about scientific renewal: unusual hypotheses, minority frameworks, and atypical combinations of prior work may disappear when increasingly AI-generated scholarship becomes the input to subsequent production. The mechanism operates through the literature presented to a fixed model, without recursive retraining. We propose a controlled experiment anchored in a verified corpus of American National Election Studies scholarship, comparing replacement of prior literature, accumulation alongside human work, and periodic human injection. A common structured representation will support measures of semantic diversity, citation-combination novelty, and variation in hypotheses and research designs. The broader institutional question is how scholarly systems can retain their capacity for renewal as production and evaluation become increasingly automated.",
     links: {}
   },
   {
