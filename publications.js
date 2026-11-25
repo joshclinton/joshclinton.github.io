@@ -29,6 +29,15 @@ const PUBLICATIONS = [
   /* type "working" = active; type "unpublished" = finished, not in a journal.
      Both need a link (PDF or preprint). award = a prize; note = a short story. */
   {
+    title: "Challenges in Public Opinion Research",
+    authors: "Joshua D. Clinton",
+    venue: "", year: 2027, type: "working", featured: false,
+    status: "Forthcoming, Annual Review of Political Science",
+    topics: ["public opinion", "polling", "data science"],
+    abstract: "The study of public opinion has always confronted a fundamental problem of representation: how to characterize the opinions of a diverse public using survey responses from the relatively few people who decide to participate. AI presents the field with a paradox: a technology that may allow us to better measure opinions also makes it harder to know what we are measuring. Can we study public opinion without either the public or actual opinion?",
+    links: { pdf: "assets/papers/C_ARPS2027.pdf" }
+  },
+  {
     title: "AI Pandering: Constructing Diverging Political Realities through Conversation",
     authors: "Joshua D. Clinton, Jim Bisbee, Jennifer Larson, Da In Lee",
     venue: "", year: 2026, type: "working", featured: false,
