@@ -54,6 +54,11 @@
     </section>
 
     <section class="wt-group">
+      <h2 class="wt-group-title">Recent &amp; upcoming talks</h2>
+      <div id="recent"></div>
+    </section>
+
+    <section class="wt-group">
       <h2 class="wt-group-title">Talks &amp; reports</h2>
       <div class="wt-cards" id="talks"></div>
     </section>
@@ -102,6 +107,43 @@ const ARTICLES = [
     outlet: "Good Authority", year: 2024, img: "assets/goodauthority.jpg",
     url: "https://goodauthority.org/news/election-poll-vote2024-data-pollster-choices-weighting/",
     blurb: "How defensible weighting choices can move the reported Harris–Trump margin by several points."
+  }
+];
+
+/* Recent & upcoming talks: a plain dated list, newest first. `url` is optional. */
+const RECENT = [
+  {
+    title: "The Power of Predictive Markets",
+    event: "Kravis Center Business Speaker Series", date: "December 2, 2026",
+    where: "Kravis Center for the Performing Arts, West Palm Beach, FL",
+    url: "https://www.kravis.org/events/the-power-of-predictive-markets/",
+    blurb: "A conversation with Yesha Yadav, moderated by Laurie Silvers."
+  },
+  {
+    title: "AI and Public Opinion",
+    event: "AI Lessons for the Midterms", date: "October 29, 2026",
+    where: "Georgetown University Capitol Campus, Washington, DC",
+    blurb: "Panel presentation with G. Elliott Morris, moderated by Joshua Tucker. A workshop co-sponsored by NYU’s Center for Social Media, AI, and Politics and the Knight-Georgetown Institute."
+  },
+  {
+    title: "The Midterms: NBC Decision Desk",
+    event: "Dialogue Vanderbilt", date: "October 27, 2026",
+    where: "Vanderbilt University Central Library, Nashville, TN",
+    url: "https://anchorlink.vanderbilt.edu/event/12865347",
+    blurb: "A public conversation with Nicole Hemmer ahead of the 2026 midterm elections, presented by Dialogue Vanderbilt and Vandy Votes."
+  },
+  {
+    title: "Innovations: Markets &amp; AI",
+    event: "Political Analytics 2026", date: "October 9, 2026",
+    where: "Georgetown University McCourt School of Public Policy, Washington, DC",
+    url: "https://politicalanalyticsconference.com/",
+    blurb: "Panel with Jonathan Mendelson and Nathaniel Rakich, moderated by Scott Tranter."
+  },
+  {
+    title: "Envisioning the American Election System in 20 Years",
+    event: "Hoover Institution, Center for Revitalizing American Institutions", date: "April 23, 2026",
+    where: "Washington, DC",
+    blurb: "Invited participant in a day-long roundtable on what the U.S. election administration system should be in 20 years and beyond."
   }
 ];
 
@@ -159,6 +201,11 @@ function linkCard(it) {
 document.getElementById("lectures").innerHTML =
   LECTURES.map(l => videoCard({ ...l, metaText: "YouTube · Lecture · " + l.date })).join("");
 document.getElementById("articles").innerHTML = ARTICLES.map(linkCard).join("");
+document.getElementById("recent").innerHTML = RECENT.map(it => `<div class="wt-item">
+    <span class="wt-title">${it.title}</span>
+    <p class="wt-meta">${it.url ? `<a href="${it.url}" target="_blank">${it.event}</a>` : it.event} · ${it.where} · ${it.date}</p>
+    ${it.blurb ? `<p class="wt-blurb">${it.blurb}</p>` : ""}
+  </div>`).join("");
 document.getElementById("talks").innerHTML =
   TALKS.map(it => it.vid ? videoCard(it) : linkCard(it)).join("");
 
