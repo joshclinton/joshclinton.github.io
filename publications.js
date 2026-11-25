@@ -61,6 +61,7 @@ const PUBLICATIONS = [
     venue: "", year: 2026, type: "working", featured: false,
     status: "Presented at the 2026 Annual Meeting of the American Political Science Association",
     topics: ["public opinion"],
+    abstract: "A range of scholarship and public polls have documented declining faith in higher education. We explore the origins of this trend. Drawing on five decades of survey data, we show that confidence in higher education has declined for over twenty years, but remains higher than confidence in most other institutions. But Democrats and Republicans have become more divided on higher education than nearly any other institution. The growing partisan gap is almost entirely due to weakening support among Republicans. We show that this is not the result of the changing educational composition of the party coalitions. It appears mostly because of attitude change among partisans. We discuss the implications of this long-term partisan polarization for current proposals to reform higher education, many of which do not grapple with the challenges that this partisan polarization poses.",
     links: {}
   },
   {
