@@ -56,6 +56,14 @@ const PUBLICATIONS = [
     links: { pdf: "assets/papers/BCLL_AIPandering.pdf", doi: "https://preprints.apsanet.org/engage/apsa/article-details/69a746f6810b9dcc82e0c5b0" }
   },
   {
+    title: "Confidence in Higher Education",
+    authors: "Joshua D. Clinton, John Sides",
+    venue: "", year: 2026, type: "working", featured: false,
+    status: "Presented at the 2026 Annual Meeting of the American Political Science Association",
+    topics: ["public opinion"],
+    links: {}
+  },
+  {
     title: "Prediction Markets? The Accuracy and Efficiency of Political Prediction Markets in the 2024 Presidential Election",
     authors: "Joshua D. Clinton, TzuFeng Huang",
     venue: "", year: 2026, type: "working", featured: false,
