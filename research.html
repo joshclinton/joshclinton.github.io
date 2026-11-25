@@ -70,7 +70,8 @@
 </div>
 
 <!-- Real corpus, built from /Published. Defines PUBLICATIONS and TOPIC_ORDER. -->
-<script src="publications.js"></script>
+<!-- load the publications data with a timestamp so browsers never show a stale cached copy -->
+<script>document.write('<script src="publications.js?v=' + Date.now() + '"><\/script>');</script>
 <script>
 /* ---- render (data lives in publications.js) ---------------------- */
 let activeTopic = null;
