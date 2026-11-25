@@ -628,7 +628,7 @@ const PUBLICATIONS = [
   /* ===================== REPORTS ===================== */
   {
     title: "Task Force on 2020 Pre-Election Polling: An Evaluation of the 2020 General Election Polls",
-    authors: "AAPOR Task Force (chaired by Joshua D. Clinton)",
+    authors: "Joshua D. Clinton (Chair), Jennifer Agiesta, Megan Brenan, Camille Burge, Marjorie Connelly, Ariel Edwards-Levy, Bernard Fraga, Emily Guskin, D. Sunshine Hillygus, Chris Jackson, Jeff Jones, Scott Keeter, Kabir Khanna, John Lapinski, Lydia Saad, Daron Shaw, Andrew Smith, David Wilson, Christopher Wlezien",
     venue: "AAPOR Report", year: 2021, type: "report", featured: false,
     topics: ["polling", "elections"],
     abstract: "The AAPOR task-force evaluation of the 2020 general-election polls and the sources of their errors.",
