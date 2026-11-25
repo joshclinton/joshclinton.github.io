@@ -149,6 +149,7 @@ function renderPapers() {
 
   document.getElementById("paperList").innerHTML = list.map((p) => {
     const links = [];
+    if (p.abstract)   links.push(`<a href="#" class="abs-toggle">Abstract</a>`);
     if (p.links.pdf)  links.push(`<a href="${p.links.pdf}" target="_blank">PDF</a>`);
     if (p.links.doi)  links.push(`<a href="${p.links.doi}" target="_blank">${isWP(p) ? "Preprint" : "Journal / DOI"}</a>`);
     if (p.links.data) links.push(`<a href="${p.links.data}">Replication data</a>`);
@@ -176,8 +177,16 @@ function renderPapers() {
     </article>`;
   }).join("");
 
+  /* the title and the "Abstract" link both open and close the abstract */
+  const toggleAbstract = paper => {
+    const open = paper.classList.toggle("open");
+    const l = paper.querySelector("a.abs-toggle");
+    if (l) l.textContent = open ? "Hide abstract" : "Abstract";
+  };
   document.querySelectorAll("button.paper-title").forEach(b =>
-    b.addEventListener("click", () => b.closest(".paper").classList.toggle("open")));
+    b.addEventListener("click", () => toggleAbstract(b.closest(".paper"))));
+  document.querySelectorAll("a.abs-toggle").forEach(l =>
+    l.addEventListener("click", e => { e.preventDefault(); toggleAbstract(l.closest(".paper")); }));
 }
 
 function render() { renderTopics(); renderPapers(); }
