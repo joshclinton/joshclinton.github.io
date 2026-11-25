@@ -64,6 +64,14 @@ const PUBLICATIONS = [
     links: {}
   },
   {
+    title: "AI-Mediated Scholarly Production and Epistemic Collapse in Political Science",
+    authors: "James Bisbee, Joshua D. Clinton",
+    venue: "", year: 2026, type: "working", featured: false,
+    status: "Working paper",
+    topics: ["data science", "methodology"],
+    links: {}
+  },
+  {
     title: "Prediction Markets? The Accuracy and Efficiency of Political Prediction Markets in the 2024 Presidential Election",
     authors: "Joshua D. Clinton, TzuFeng Huang",
     venue: "", year: 2026, type: "working", featured: false,
