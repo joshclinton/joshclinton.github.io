@@ -109,7 +109,7 @@ const PUBLICATIONS = [
     topics: ["Congress", "methodology"],
     award: "Winner, 1999 Congressional Quarterly Press Award for the best graduate paper in Law and Courts.",
     note: "My second-year graduate paper.",
-    abstract: "I test the Separation of Powers and Attitudinal models of judicial decision making by asking how far the Supreme Court’s statutory interpretation from 1953 to 1995 responds to congressional and presidential preferences, using a game-theoretic framework and a method that places the Court and the elected bodies on a comparable scale. I find scant support for the Separation of Powers model.",
+    abstract: "I test the implications of the two main theories of judicial decision making (i.e., the Separation of Powers Model and the Attitudinal Model) by examining the extent to which the Court responds to elected bodies’ preferences in its interpretation of federal statutes from 1953-1995. I do so by deriving the models within a game-theoretic framework that precisely identifies the models’ predictions, and by developing a method that recovers comparable preferences between the Court and the elected bodies. Even allowing for alternative measurement choices, the paper finds scant evidence supporting the predictions of the Separation of Powers Model.",
     links: { pdf: "assets/papers/C_WP1998.pdf" }
   },
   {
@@ -120,7 +120,7 @@ const PUBLICATIONS = [
     topics: ["polling", "methodology"],
     award: "Winner, 2001 AAPOR Graduate Student Paper Award.",
     note: "Written while I was an intern at InterSurvey (then Knowledge Networks) during graduate school, and an early sign of the survey-methods work to come.",
-    abstract: "A case study of how attrition and panel conditioning bias estimates from the Knowledge Networks internet survey panel, and what that implies for inference from online panels.",
+    abstract: "With the recent rise of Internet based public opinion studies, panel studies have been utilized with much more frequency. Although the benefits of panel methods are well known (e.g., Sharot 1991), using a panel risks bias in two ways. First, since panels rely on re-interviewing panelists, systematic panel attrition can produce a panel that is unrepresentative of the target population. Second, interviewing and re-interviewing panelists may change the opinions/behaviors of the panelists – creating unrepresentative panelists. To investigate the prevalence and impact of these possible biases, I investigate a panel that is particularly suspect to these sources of bias – the panel of Knowledge Networks. Knowledge Networks’ panelists are not only given an interactive TV appliance and Internet access, but they are also surveyed weekly. In this paper I both examine the extent (and effect) of panel attrition in Knowledge Networks’s panel over a 7 month period, as well as report the results of an experiment designed to isolate the possible opinion/behavior changes introduced by panel participation. I find little evidence of either type of bias in the Knowledge Networks panel.",
     links: { pdf: "assets/papers/C_WP2001.pdf" }
   },
   {
@@ -130,7 +130,7 @@ const PUBLICATIONS = [
     status: "1999",
     topics: ["public opinion", "Congress"],
     note: "Possibly the only paper Barry Weingast never published. It earned a revise-and-resubmit at the Journal of Politics that we did not think we could convert.",
-    abstract: "A new analysis of when and why presidents “go public,” appealing directly to citizens to pressure Congress rather than bargaining privately.",
+    abstract: "A new approach to studying the presidency has recently emerged from the formal theory of American politics that is being applied to a variety of presidential activities including vetoes, unilateral action, and appointments. We use the phenomenon of presidential public activities to illustrate the contribution of this new approach for our understanding of the presidency. We argue that it is a mistake to undertake an analysis of presidential activities like public speeches without considering both the political environment – specifically the preferences of important congressional actors – and the policy change being pursued (i.e., the location of the status quo policy). Abstracting away from the idiosyncratic features of individual presidents and embedding presidential public activity in the larger separation of powers system illuminates three different logics undergirding public activity, namely changing legislator preferences, claiming credit for the passage of legislation, and making veto threats credible. Examining presidential activity without accounting for the different possible motivations for going public or the fact that presidents are a single actor in the policymaking process operating under both institutional and political constraints risks overestimating presidential influence. We conclude that the new approach to the study of the presidency can illuminate important theoretical insights and improve empirical analysis.",
     links: { pdf: "assets/papers/CLRW_WP1999.pdf" }
   },
   {
@@ -140,7 +140,7 @@ const PUBLICATIONS = [
     status: "2013",
     topics: ["Congress", "methodology"],
     award: "Winner, 2014 Patrick J. Fett Award for the best paper on Congress and the Presidency at the 2013 MPSA.",
-    abstract: "Comparing executive and legislative preferences is hard because the actors do not take positions on the same issues. We propose a new measure of the president’s ideal point from vote returns and use it to compare presidential and congressional preferences and their effects on lawmaking, agency budgeting, and unilateral executive action from 1874 to 2010.",
+    abstract: "Investigating executive and legislative interactions is critical for understanding presidential systems. Doing so requires comparing the preferences of the elites involved, which is challenging because these actors do not take positions on the same issues and are motivated by different strategic considerations. To circumvent these difficulties, we propose a new measure of the president’s ideal point based on vote returns and an assumption about the electoral connection. We illustrate the generalizability of this approach by estimating the preferences of U.S. presidents (and their challengers) from 1874-2010 and California governors from 1994-2010. Additionally, we use our new measure to test the effect of executive-legislative congruence on: legislative productivity (1877-1996), agency budgeting (1933-2006), and the issuance of executive orders (1945-2001). These examples demonstrate the content validity of our measure, as well as how it can be used to refine our substantive understanding of inter-branch relations.",
     links: { pdf: "assets/papers/CJJ_WP2013.pdf" }
   },
   {
@@ -149,7 +149,7 @@ const PUBLICATIONS = [
     venue: "", year: 2008, type: "unpublished", featured: false,
     status: "2008",
     topics: ["Congress", "public opinion"],
-    abstract: "Using an original survey of nearly 13,000 respondents, we ask whether third parties indirectly educate constituents about congressional disagreements. Contrary to accounts of indirect oversight, disagreement between representatives and their constituents has only a small effect on what constituents know about prominent House votes.",
+    abstract: "Low levels of constituent knowledge about roll call voting cause some to question the prospects for Congressional accountability. Others suggest that challengers, interest groups, and other third parties educate constituents about disagreements and reduce the need for active monitoring. This paper examines the prospects for such indirect oversight using an original survey of nearly 13,000 respondents. Contrary to accounts of indirect oversight, we find that disagreement between representatives and their constituents has only a small effect on constituent knowledge about prominent votes in the House of Representatives involving the impeachment charges against President Clinton and the granting of Permanent Normal Trade Relations (PNTR) to China. We also find no evidence that high-quality candidates are more likely to challenge unresponsive incumbents, or that outside actors publicize highly unresponsive votes in campaign advertising. Despite frequent appeals to the possibility of “fire alarm” oversight, we find little evidence of its presence.",
     links: { pdf: "assets/papers/CT_WP2008.pdf" }
   },
   {
@@ -159,7 +159,7 @@ const PUBLICATIONS = [
     status: "2002",
     topics: ["methodology", "public opinion"],
     note: "An early collaboration with the econometrician Charles Manski on measuring subjective expectations.",
-    abstract: "A method for turning verbal expectation responses into empirical probability scales, applied to survey respondents’ expectations of losing their job.",
+    abstract: "Survey researchers have long used verbal expressions of likelihood to elicit the expectations that respondents hold for future events. The General Social Survey (GSS) uses this question to elicit expectations of job loss: “Thinking about the next twelve months, how likely do you think it is that you will lose your job or be laid off - very likely, fairly likely, not too likely, or not at all likely?” Recently, surveys have elicited expectations in the form of numerical probabilities. The Survey of Economic Expectations (SEE) asks: “What do you think is the percent chance that you will lose your job during the next 12 months?” Whereas verbal questions at most convey ordinal information on expectations, probabilistic questions measure expectations on a well-defined absolute scale. This paper shows that auxiliary data collection can enable probabilistic re-scaling of verbal expectations data and thereby enhance the value of such data. The idea is to pose corresponding verbal and probabilistic questions to a suitable sample of respondents. The responses may be used to learn the frequency distributions of subjective probabilities reported by persons who give different verbal answers. These frequency distributions may then be used to predict the probability responses of respondents to surveys that now collect only verbal expectations data. Applying the prediction process, we have administered the GSS and SEE questions on job loss to a national sample of Knowledge Networks (KN) panelists. The KN data enable us to impute the probabilistic job-loss expectations that GSS respondents would have reported had they been asked. We report the findings.",
     links: { pdf: "assets/papers/CM_WP2002.pdf" }
   },
 
@@ -177,7 +177,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton",
     venue: "American Political Science Review", year: 2026, type: "article", featured: true,
     topics: ["elections", "public opinion"],
-    abstract: "Leveraging growing procedural polarization in election law, opinion data from 2008 to 2024, and a large survey experiment before the 2024 election, I show that agreement with election procedures shapes voter confidence beyond the well-established effects of partisan control and electoral outcomes.",
+    abstract: "Prior research demonstrates voters’ confidence in elections depends on whether their preferred candidate wins, but does agreement with the electoral rules being used also matter? Leveraging growing procedural polarization in election laws, public opinion data from 2008 to 2024, and a large-scale survey experiment conducted before the 2024 election, I show that agreement with election procedures matters for voter confidence beyond well-established effects related to partisan control and electoral outcomes. Observational and experimental analyses consistently reveal that voters are less likely to express confidence in election results conducted using procedures they oppose. The effects are particularly large for voter identification laws and among Republicans and independents. The findings underscore a tension in American federalism: as states increasingly adopt divergent electoral rules aligned with co-partisan preferences, partisan divides in electoral confidence may deepen. If so, procedural responsiveness to partisan preferences may undermine electoral confidence and, in turn, perceptions of electoral legitimacy.",
     links: { pdf: "assets/papers/C_APSR2026.pdf", doi: "https://doi.org/10.1017/S000305542610166X" }
   },
   {
@@ -185,7 +185,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton",
     venue: "PS: Political Science & Politics", year: 2026, type: "article", featured: false,
     topics: ["elections", "public opinion", "polling"],
-    abstract: "Using a rolling cross-section of 54,000 voters, a panel of 6,000, and surveys of 1,400 local elites, I trace how confidence in national elections shifted with the projected election of President Trump: Republican confidence rose sharply while Democratic confidence fell, converging by mid-December.",
+    abstract: "Using a rolling cross-section survey of 54,000 voters conducted between mid-October and mid-December, a panel survey of 6,000 voters interviewed in both October and December, and surveys of 1,400 local political elites and officials conducted in both October and December, this study characterizes how confidence in the accuracy of national elections changed with the projected election of President Trump on Election Day. Among voters, Republican confidence immediately increased by 31 percentage points (123% change) and Democrats’ confidence declined by 12 percentage points (16% change) such that the confidence among partisan voters was almost identical by mid-December. The most polarized partisans exhibited the largest confidence changes. Among local political elites, the increase in Republicans’ confidence mirrored the increase among Republican voters (106% change), but the confidence among Democratic political elites remained high throughout. These findings highlight troubling concerns for sustaining a shared confidence in the accuracy and legitimacy of future elections.",
     links: { pdf: "assets/papers/C_PS2026.pdf", doi: "https://doi.org/10.1017/S1049096525101662" }
   },
   {
@@ -193,7 +193,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Michael Barber, Brandice Canes-Wrone, Gregory A. Huber",
     venue: "Journal of Politics", year: 2026, type: "article", featured: false,
     topics: ["elections", "public opinion"],
-    abstract: "Surveying verified 2017–2018 donors, affluent individuals, and the general public, we find donors in both parties hold more ideologically extreme domestic-policy views than either the affluent or the public, differences not explained by demographics or political interest.",
+    abstract: "Are campaign donors simply affluent people who happen to give to campaigns, or do donors and the affluent differ in their policy views? The answer to this question shapes our understanding of the impact of money in politics and economic inequality more broadly. To answer this question, we conducted surveys of verified 2017-2018 donors, affluent individuals, and the general population. Comparing the preferences of copartisans reveals both parties’ donors have more ideologically extreme views on domestic policies than either the affluent or general public. On international issues, however, Democratic donors are more pro-internationalist than affluent and general public copartisans while Republican donors are similar to affluent copartisans. These differences are not attributable to demographic composition or level of political interest across the groups. Analyzing variation among donor-types, we find some types are indeed more likely to hold extreme views than others, but differences from the affluent persist regardless of whether the contributor gave to an out-of-state congressional race, donated a small amount, or recently gave to a presidential candidate.",
     links: { pdf: "assets/papers/BCWCH_JOP2026.pdf", doi: "https://doi.org/10.1086/736337" }
   },
   {
@@ -201,7 +201,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Michael Barber, Brandice Canes-Wrone, Gregory A. Huber",
     venue: "Public Opinion Quarterly", year: 2025, type: "article", featured: false,
     topics: ["public opinion", "elections"],
-    abstract: "Comparing donors, the wealthy, and the mass public, we examine which Republican constituencies back restrictive abortion laws and how donor preferences diverge from those of co-partisans.",
+    abstract: "Roe vs. Wade (1973) recognized a constitutional right to abortion under various circumstances and, in doing so, facilitated a political environment in which politicians could endorse more restrictive abortion policies that Roe prohibited. Indeed, many states enacted “trigger” laws that would only carry the force of law if Roe were overturned. The Supreme Court in Dobbs vs. Jackson (2022) removed the constitutional right to abortion, ending a situation in which this type of position taking lacked policy consequences and creating an environment in Republican-led states where many policies seemingly contrast with public opinion. To investigate potential sources of support for a variety of types of restrictions, we analyze an original survey of over 7,500 verified donors, 1,500 affluent individuals, and 1,000 members of the general public conducted in 2019–2020. The most extreme restrictions, such as bans with no rape exception, are not popular with Republicans in the aggregate from any of the three groups—Republican donors, affluent individuals, or voters—but they are supported by the small and potentially influential group of highly religious Republicans who report that abortion is one of their most important issues.",
     links: { pdf: "assets/papers/BCCWH_POQ.pdf", doi: "https://doi.org/10.1093/poq/nfaf012" }
   },
   {
@@ -209,7 +209,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Jim Bisbee, Cassy Dorff, Brenton Kenkel, Jennifer Larson",
     venue: "Political Analysis", year: 2024, type: "article", featured: true,
     topics: ["methodology", "data science", "public opinion"],
-    abstract: "We test how well ChatGPT recovers public opinion by prompting it to adopt personas and rate sociopolitical groups. Averages track the ANES, but synthetic samples show too little variation for reliable inference and coefficients often diverge from survey-based estimates.",
+    abstract: "Large language models (LLMs) offer new research possibilities for social scientists, but their potential as “synthetic data” is still largely unknown. In this paper, we investigate how accurately the popular LLM ChatGPT can recover public opinion, prompting the LLM to adopt different “personas” and then provide feeling thermometer scores for 11 sociopolitical groups. The average scores generated by ChatGPT correspond closely to the averages in our baseline survey, the 2016–2020 American National Election Study (ANES). Nevertheless, sampling by ChatGPT is not reliable for statistical inference: there is less variation in responses than in the real surveys, and regression coefficients often differ significantly from equivalent estimates obtained using ANES data. We also document how the distribution of synthetic responses varies with minor changes in prompt wording, and we show how the same prompt yields significantly different results over a 3-month period. Altogether, our findings raise serious concerns about the quality, reliability, and reproducibility of synthetic survey data generated by LLMs.",
     links: { pdf: "assets/papers/BCDKL_PA2024.pdf", doi: "https://doi.org/10.1017/pan.2024.5" }
   },
   {
@@ -217,7 +217,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Mellissa Meisels, Gregory A. Huber",
     venue: "British Journal of Political Science", year: 2024, type: "article", featured: false,
     topics: ["elections", "public opinion"],
-    abstract: "Using experimental vignettes administered to 7,000 verified midterm donors, we show ideological congruence, district competitiveness, and opponent extremity all shape contribution decisions, with an asymmetric penalty against more moderate candidates.",
+    abstract: "How does candidate ideology affect donors' contribution decisions in U.S. House elections? Studies of donor motivations have struggled with confounding of candidate, donor, and district characteristics in observational data and the difficulty of assessing trade-offs in surveys. We investigate how these factors affect contribution decisions using experimental vignettes administered to 7,000 verified midterm donors. While ideological congruence influences donors' likelihood of contributing to a candidate, district competitiveness and opponent extremity are equally important. Moreover, the response to ideology is asymmetric and heterogeneous: donors penalize more moderate candidates five times more heavily than more extreme candidates, with the most extreme donors exhibiting the greatest preference for candidates even more extreme than themselves. Republicans also exhibit a greater relative preference for extremism than Democrats, although partisan differences are smaller than differences by donor extremism. Our findings suggest that strategic considerations matter, and donors incentivize candidate extremism even more than previously thought.",
     links: { pdf: "assets/papers/MCH_BJPS2024.pdf", doi: "https://doi.org/10.1017/s0007123423000650" }
   },
   {
@@ -265,7 +265,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Adriane Fresh, Nick Eubank, Michael E. Shepherd",
     venue: "Election Law Journal", year: 2020, type: "article", featured: false,
     topics: ["elections"],
-    abstract: "Using the near-universe of eligible voters, polling places, and precinct boundaries across three presidential elections, we find no evidence that local administrators allocate polling places in a manner consistent with partisan or racial manipulation.",
+    abstract: "Do local election administrators change precincts and Election Day polling place locations to target voters based on their partisanship or race? We systematically evaluate whether decisions consistent with targeting occur using the near universe of eligible voters, polling place locations, and precinct boundaries across three presidential elections in the closely contested state of North Carolina. We find no evidence that local administrators allocate precincts and polling places in a manner consistent with partisan manipulation for electoral gain. Some counties appear to differentially target opposition party voters with these changes, but the county-level variation we document is likely due to random variation rather than deliberate manipulation. There is also little evidence that the removal of minority voter protections in Shelby County v. Holder impacted polling place placement. If partisan-motivated precinct or polling place decisions occur in North Carolina, they are seemingly more idiosyncratic than pervasive.",
     links: { pdf: "assets/papers/SFEC_ELJ_PoliticsOfPollingPlaces.pdf", doi: "https://doi.org/10.1089/elj.2019.0602" }
   },
   {
@@ -273,7 +273,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Adriane Fresh, Nick Eubank, Michael E. Shepherd",
     venue: "Political Science Research & Methods", year: 2020, type: "article", featured: false,
     topics: ["elections"],
-    abstract: "Studying more than 2 million eligible voters across three presidential elections, we show polling-place changes reduce Election Day voting on average, an effect almost fully offset by substitution into early voting.",
+    abstract: "How do changes in Election Day polling place locations affect voter turnout? We study the behavior of more than 2 million eligible voters across three closely-contested presidential elections (2008–2016) in the swing state of North Carolina. Leveraging within-voter variation in polling place location change over time, we demonstrate that polling place changes reduce Election Day voting on average statewide. However, this effect is almost completely offset by substitution into early voting, suggesting that voters, on average, respond to a change in their polling place by choosing to vote early. While there is heterogeneity in these effects by the distance of the polling place change and the race of the affected voter, the fully offsetting substitution into early voting still obtains. We theorize this is because voters whose polling places change location receive notification mailers, offsetting search costs and priming them to think about the election before election day, driving early voting.",
     links: { pdf: "assets/papers/CEFS_PSRM_PPChangeAndParticipation.pdf", doi: "https://doi.org/10.1017/psrm.2020.43" }
   },
   {
@@ -281,7 +281,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Michael W. Sances",
     venue: "Journal of Politics", year: 2020, type: "article", featured: false,
     topics: ["public opinion", "elections"],
-    abstract: "Using varied implementation of Medicaid expansion and nearly 300,000 responses in a difference-in-differences design, we find expansion made respondents modestly more positive toward the ACA and less likely to support repeal, with effects strongest among those most likely to be affected.",
+    abstract: "The Affordable Care Act (ACA) is one of the most consequential policies enacted in recent decades, but its political divisiveness and complexity call into question whether its effects can change public opinion. Using the varied implementation of one of the ACA’s key provisions—the expansion of Medicaid—and nearly 300,000 survey responses analyzed using a difference-in-differences design, we find the expansion of Medicaid makes respondents 1.5 percentage points more positive toward the ACA and 2.2 points less likely to support repealing the ACA. Effects do not vary meaningfully by partisanship, are strongest for those most likely to be directly affected, and are stronger after the 2016 election increased the chances of repeal. In addition to highlighting the ability of partisan policies to change public opinion when credibly threatened, we demonstrate how to estimate changes in model-based group opinion without bias.",
     links: { pdf: "assets/papers/SancesClintonAJPS_2021.pdf", doi: "https://doi.org/10.1086/710085" }
   },
   {
@@ -297,7 +297,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Michael W. Sances",
     venue: "Journal of Health Politics, Policy and Law", year: 2019, type: "article", featured: false,
     topics: ["public opinion"],
-    abstract: "Combining geographic and temporal variation in ACA implementation with county- and individual-level data, we reject the hypothesis that Democratic voters saw larger coverage gains; increases were made similarly across the political spectrum.",
+    abstract: "Context: The authors examined whether participation in the Affordable Care Act (ACA) differed by political partisanship. Answering this question is important for understanding how contentious elite-level decision making and discourse may affect policy uptake, and the ability of the ACA to create a constituency of beneficiaries invested in its support. Methods: The authors combined county- and individual-level data on health insurance gains, political partisanship, and variation in the ACA's implementation to test whether Democratic areas and individuals are more likely to gain health insurance after implementation of the ACA. Findings: While there was some evidence that Democrats experienced larger insurance gains than Republicans, the major partisan divide was in how insurance was obtained: Democrats were more likely than Republicans to enroll in private marketplace plans, but there were no partisan differences in uptake among those gaining insurance via the Medicaid expansions. Conclusions: These results provide some important context for the well-known and persistent partisan divide in support for the ACA, an attitudinal divide whose reflection in program participation appears conditional on the salience of different aspects of the ACA.",
     links: { pdf: "assets/papers/SC_JHPPL.pdf", doi: "https://doi.org/10.1215/03616878-7366988" }
   },
   {
@@ -305,7 +305,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Andrew M. Engelhardt, Marc J. Trussler",
     venue: "Journal of Politics", year: 2019, type: "article", featured: false,
     topics: ["elections", "polling", "public opinion"],
-    abstract: "Defining momentum as the effect of election outcomes on candidate support beyond existing trends, and using a rolling cross-section of more than 325,000 interviews, we find scant evidence that 2016 primary outcomes uniquely shaped preferences.",
+    abstract: "Notions of momentum loom large in accounts of presidential primaries despite imprecision about its meaning and measurement. Defining momentum as the impact election outcomes have on candidate support above and beyond existing trends and leveraging a rolling cross section of more than 325,000 interviews to examine daily changes in candidate support in the 2016 nomination contests reveal scant evidence that primary election outcomes uniquely affect respondents’ preferences over the competing candidates. Preferences sometimes respond to election outcomes, but the estimated effects are indistinguishable from effects occurring on nonelection days. There is also no evidence that those who should be most receptive to new information are more affected by election outcomes. As a result, our investigation strongly suggests that election outcomes are not uniquely important for affecting opinions and shaping the outcome of nomination contests.",
     links: { pdf: "assets/papers/CET_JOP2019.pdf", doi: "https://doi.org/10.1086/703383" }
   },
   {
@@ -313,7 +313,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Mark D. Richardson",
     venue: "Journal of Public Policy", year: 2019, type: "article", featured: false,
     topics: ["Congress", "methodology"],
-    abstract: "Using several measures of state policy outcomes, we argue for simulation studies to connect theory to specification, and find state lawmaking most consistent with models emphasizing the chamber median and the governor.",
+    abstract: "Given pervasive gridlock at the national level, state legislatures are increasingly the place where notable policy change occurs. Investigating such change is difficult because it is often hard to characterise policy change and use observable data to evaluate theoretical predictions; it is subsequently unclear whether law-making explanations focusing on the US Congress also apply to state legislatures. We use several measures of state policy outcomes to examine lawmaking in state legislatures across nearly two decades, and we argue for using simulation studies to connect theoretical predictions to empirical specifications and help interpret the theoretical relevance of estimated correlations. Doing so reveals that the observed law-making outcomes we study are most consistent with law-making models emphasising the importance of the chamber median and the powers of the governor rather than those that focus on the preferences of the majority party.",
     links: { pdf: "assets/papers/CR_JPP2016.pdf", doi: "https://doi.org/10.1017/s0143814x17000265" }
   },
   {
@@ -321,7 +321,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Michael W. Sances",
     venue: "American Political Science Review", year: 2018, type: "article", featured: true,
     topics: ["public opinion", "elections"],
-    abstract: "Exploiting cross-state variation from NFIB v. Sebelius, we compare registration and turnout after Medicaid expansion and find higher participation in expansion states, concentrated where the most residents were eligible, with effects on registration persisting through 2016.",
+    abstract: "Whether public policy affects electoral politics is an enduring question with an elusive answer. We identify the impact of the highly contested Patient Protection and Affordable Care Act (ACA) of 2010 by exploiting cross-state variation created by the 2012 Supreme Court decision in National Federation of Independent Business v. Sebelius. We compare changes in registration and turnout following the expansion of Medicaid in January of 2014 to show that counties in expansion states experience higher political participation compared to similar counties in nonexpansion states. Importantly, the increases we identify are concentrated in counties with the largest percentage of eligible beneficiaries. The effect on voter registration persists through the 2016 election, but an impact on voter turnout is only evident in 2014. Despite the partisan politics surrounding the ACA—a political environment that differs markedly from social programs producing policy feedbacks in the past—our evidence is broadly consistent with claims that social policy programs can produce some political impacts, at least in the short-term.",
     links: { pdf: "assets/papers/CS_APSR2018.pdf", doi: "https://doi.org/10.1017/s0003055417000430" }
   },
   {
@@ -329,7 +329,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Courtney Kennedy, et al. (AAPOR Task Force)",
     venue: "Public Opinion Quarterly", year: 2018, type: "article", featured: false,
     topics: ["polling", "elections"],
-    abstract: "The AAPOR task-force evaluation of the 2016 U.S. election polls, their accuracy, and the sources of error.",
+    abstract: "The 2016 presidential election was a jarring event for polling in the United States. Preelection polls fueled high-profile predictions that Hillary Clinton’s likelihood of winning the presidency was about 90 percent, with estimates ranging from 71 to over 99 percent. When Donald Trump was declared the winner of the presidency, there was a widespread perception that the polls failed. But did the polls fail? And if so, why? Those are among the central questions addressed by an American Association for Public Opinion Research (AAPOR) ad hoc committee. This paper presents the committee’s analysis of the performance of preelection polls in 2016, how that performance compares to polling in prior elections, and the extent to which performance varied by poll design. In addition, the committee examined several theories as to why many polls, particularly in the Upper Midwest, underestimated support for Trump. The explanations for which the most evidence exists are a late swing in vote preference toward Trump and a pervasive failure to adjust for overrepresentation of college graduates (who favored Clinton). In addition, there is clear evidence that voter turnout changed from 2012 to 2016 in ways that favored Trump, though there is only mixed evidence that misspecified likely voter models were a major cause of the systematic polling error. Finally, there is little evidence that socially desirable (Shy Trump) responding was an important contributor to poll error.",
     links: { pdf: "assets/papers/AAPOR-2016-Election-Polling-Report.pdf", doi: "https://doi.org/10.1093/poq/nfx047" }
   },
   {
@@ -337,7 +337,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, David E. Lewis, Mark D. Richardson",
     venue: "Journal of Politics", year: 2018, type: "article", featured: false,
     topics: ["methodology", "Congress"],
-    abstract: "Using a survey of federal executives, we measure perceived ideological leanings for twice as many agencies as previously possible and develop a new measure of perceived workforce skill.",
+    abstract: "Perceptions of the policy leanings of government agencies are an important component of an agency’s political environment, and an agency’s political environment can greatly influence how agencies formulate and implement public policy. We use a recent survey of federal executives to measure the perceptions of the ideological leanings of twice as many agencies as previously possible. Our estimates compare reassuringly to extant measures based on both expert evaluations and aggregations of the opinions of those working within agencies. We also develop a novel measure of perceptions of workforce skill. Given the prominence of the concepts of agency ideology and skill in theories of executive branch politics, the estimates we generate provide important opportunities for understanding agencies’ political environments and their implications for policy making. The generation of these measures also illustrates an approach to measuring hard-to-observe characteristics that could usefully be adopted in other contexts.",
     links: { pdf: "assets/papers/RCL_JOP2017.pdf", doi: "https://doi.org/10.1086/694846" }
   },
   {
@@ -345,7 +345,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Allison Archer",
     venue: "Political Communication", year: 2018, type: "article", featured: false,
     topics: ["public opinion"],
-    abstract: "We examine whether changes in ownership affect the content of the news.",
+    abstract: "The press is essential for creating an informed citizenry, but its existence depends on attracting and maintaining an audience. It is unclear whether supply-side effects—including those dictated by the owners of the media—influence how the media cover politics, yet this question is essential given their abilities to set the agenda and frame issues that are covered. We examine how ownership influences media behavior by investigating the impact of Rupert Murdoch’s purchase of the Wall Street Journal (WSJ) in August 2007. We collect data on every front-page story and editorial for 27 months, and we compare the difference in political coverage between the New York Times (NYT) and WSJ using a difference-in-differences design. We show that the amount of political content in the opinion pages of the two papers were unchanged by the sale, but the WSJ’s front-page coverage of politics increased markedly relative to the NYT. Similar patterns emerge when comparing the WSJ’s content to USA Today and the Washington Post. Our finding highlights potential limits to journalists’ ability to fulfill their supposed watchdog role in democracies without interference from owners in the boardroom.",
     links: { pdf: "assets/papers/AC_PC2017.pdf", doi: "https://doi.org/10.1080/10584609.2017.1375581" }
   },
   {
@@ -353,7 +353,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton",
     venue: "Annual Review of Political Science", year: 2017, type: "article", featured: true,
     topics: ["methodology", "Congress"],
-    abstract: "A review of data-driven and model-driven approaches to characterizing the content and direction of policy, highlighting the limitations scholars continue to face.",
+    abstract: "Many of the questions that are central to political science involve understanding either the causes or consequences of policy change. Scholars have relied on both data-driven and model-driven approaches to characterize the content and direction of policy. This review briefly describes several prominent measures from each approach, and it highlights important limitations that scholars continue to face in the hope of prompting continued contributions to this difficult, but essential, task.",
     links: { pdf: "assets/papers/C_AR2017.pdf", doi: "https://doi.org/10.1146/annurev-polisci-062615-031524" }
   },
   {
@@ -361,7 +361,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, David A. Bateman, John S. Lapinski",
     venue: "American Journal of Political Science", year: 2017, type: "article", featured: true,
     topics: ["Congress", "methodology"],
-    abstract: "Focusing on civil rights since Reconstruction, we show that incorporating the policies being voted upon yields a starkly different portrait of elite conflict: contemporary parties are less divided than commonly thought, with conflict in a smaller, more liberal region of the policy space.",
+    abstract: "The study of political conflict in legislatures is fundamental to understanding the nature of governance, but also difficult because of changes in membership and the issues addressed over time. Focusing on the enduring issue of civil rights in the United States since Reconstruction, we show that using current methods and measures to characterize elite ideological disagreements makes it hard to interpret or reconcile the conflicts with historical understandings because of their failure to adequately account for the policies being voted upon and the consequences of the iterative lawmaking process. Incorporating information about the policies being voted upon provides a starkly different portrait of elite conflict—not only are contemporary parties relatively less divided than is commonly thought, but the conflict occurs in a smaller, and more liberal, portion of the policy space. These findings have important implications for a broad range of work that uses elite actions to compare political conflict/polarization across time.",
     links: { pdf: "assets/papers/BCL_AJPS2016.pdf", doi: "https://doi.org/10.1111/ajps.12281" }
   },
   {
@@ -369,7 +369,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Brett Benson",
     venue: "Journal of Conflict Resolution", year: 2016, type: "article", featured: false,
     topics: ["methodology"],
-    abstract: "We show how a Bayesian measurement model can estimate the scope, depth, and potential military capacity of formal alliances signed between 1816 and 2000, and use the estimates to revisit core intuitions about alliance formation.",
+    abstract: "Many critical questions involving the causes and consequences of formal military alliances are related to differences between various alliances in terms of the scope of the formal obligations, the depth of the commitment between signatories, and the potential military capacity of the alliance. Studying the causes and consequences of such variation is difficult because while we possess many indicators of various features of an alliance agreement that are thought to be related to the broader theoretical concepts of interest, it is unclear how to use the multitude of observable measures to characterize these broader underlying concepts. We show how a Bayesian measurement model can be used to provide parsimonious estimates of the scope, depth, and potential military capacity of formal military alliances signed between 1816 and 2000. We use the resulting estimates to explore some core intuitions that were previously difficult to verify regarding the formation of the formal alliance agreement, and we check the validity of the measures against known cases in alliances as well as by exploring common expectations regarding historical alliances.",
     links: { pdf: "assets/papers/BC_JCR2014.pdf", doi: "https://doi.org/10.1177/0022002714560348" }
   },
   {
@@ -377,7 +377,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Jason Grissom",
     venue: "Journal of Public Policy", year: 2015, type: "article", featured: false,
     topics: ["public opinion"],
-    abstract: "We examine how public information shapes learning and opinion in education policy and what that implies for bottom-up democratic accountability.",
+    abstract: "Theories of political accountability assume citizens use information about the performance of government to hold public officials accountable, but whether citizens actually use information is difficult to directly examine. We take advantage of the importance of citizen-driven, performance-based accountability for education policy in Tennessee to conduct a survey experiment that identifies the effect of new information, mistaken beliefs and differing considerations on the evaluation of public officials and policy reforms using 1,500 Tennesseans. Despite an emphasis on reporting outcomes for school accountability policies in the state, mistaken beliefs are prevalent and produce overly optimistic assessments of the institutions responsible for statewide education policy. Moreover, individuals update their assessments of these institutions in an unbiased way when provided with objective performance data about overall student performance. Providing additional information about race-related performance differences does not alter this relationship, however. Finally, support for specific policies that are intended to improve student performance is unchanged by either type of performance information; opinions about policy reforms are instead most related to race and existing partisan commitments.",
     links: { pdf: "assets/papers/CG_JPP2015.pdf", doi: "https://doi.org/10.1017/s0143814x14000312" }
   },
   {
@@ -385,7 +385,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Ted Enamorado",
     venue: "Journal of Politics", year: 2014, type: "article", featured: false,
     topics: ["Congress", "public opinion"],
-    abstract: "Using the gradual post-1996 spread of Fox News across districts, we show representatives became less supportive of President Clinton where Fox News began broadcasting, with effects realized over several years.",
+    abstract: "Despite the prominence of the national news media, it is unclear whether elected officials are affected by the national news media in policy-consequential ways because of the difficulty of disentangling the influence of the media on Congress from Congress’s influence on the media. We use a unique opportunity to determine whether position-taking behavior in Congress and the likelihood of reelection is affected by the national news media. Using the fact that the Fox News Channel spread gradually across the United States after being launched in October of 1996 in ways unrelated to the ideology of congressional districts and the incumbent representatives, we show that representatives become less supportive of President Clinton in districts where Fox News begins broadcasting than similar representatives in similar districts where Fox News was not broadcast. Moreover, the effects took a few years to be realized, and the entry of Fox News in a district did not appear to affect which representatives were reelected. Consistent with theories emphasizing the anticipatory actions taken by elected officials to maximize their electoral security in the face of changing electoral conditions, our results suggest that the national media may slightly affect the prospects for policy change by altering representatives’ expectations and the positions that they take.",
     links: { pdf: "assets/papers/CE_JOP2014.pdf", doi: "https://doi.org/10.1017/s0022381614000425" }
   },
   {
@@ -393,7 +393,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, David Lewis, Jen Selin",
     venue: "American Journal of Political Science", year: 2014, type: "article", featured: false,
     topics: ["Congress", "methodology"],
-    abstract: "Using a survey of federal executives to place agencies, committees, and the president on a comparable scale, we find Congress is less influential relative to the White House when more committees are involved.",
+    abstract: "Does the president or Congress have more influence over policymaking by the bureaucracy? Despite a wealth of theoretical guidance, progress on this important question has proven elusive due to competing theoretical predictions and severe difficulties in measuring agency influence and oversight. We use a survey of federal executives to assess political influence, congressional oversight, and the policy preferences of agencies, committees, and the president on a comparable scale. Analyzing variation in political influence across and within agencies reveals that Congress is less influential relative to the White House when more committees are involved. While increasing the number of involved committees may maximize the electoral benefits for members, it may also undercut the ability of Congress as an institution to collectively respond to the actions of the presidency or the bureaucracy.",
     links: { pdf: "assets/papers/CLS_AJPS2014.pdf", doi: "https://doi.org/10.1111/ajps.12066" }
   },
   {
@@ -401,7 +401,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Steve Rogers",
     venue: "PS: Political Science & Politics", year: 2013, type: "article", featured: false,
     topics: ["polling", "elections"],
-    abstract: "Evaluating 159 polls from the 2012 Republican primaries, we find no overall accuracy difference between IVR and human polls, but IVR polls conducted after human polls are significantly poorer predictors, suggesting pollsters may take cues from one another.",
+    abstract: "After the 2012 Republican New Hampshire primary, 159 poll results were released prior to the subsequent nomination contests in the Republican presidential primary. More than two-thirds of these polls relied on interactive voice response (IVR) software to conduct the interviews. We evaluate the ability of polls to predict the vote-share for the Republican candidates Romney, Santorum, and Gingrich. We find no overall difference in the average accuracy of IVR and traditional human polls, but IVR polls conducted prior to human polls are significantly poorer predictors of election outcomes than traditional human polls even after controlling for characteristics of the states, polls, and electoral environment. These findings provide suggestive, but not conclusive, evidence that pollsters may take cues from one another given the stakes involved. If so, reported polls should not be assumed to be independent of one another and so-called poll-of-polls will be misleadingly precise.",
     links: { pdf: "assets/papers/CR_PS2013.pdf", doi: "https://doi.org/10.1017/s1049096513000012" }
   },
   {
@@ -425,7 +425,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton",
     venue: "Annual Review of Political Science", year: 2012, type: "article", featured: true,
     topics: ["methodology", "Congress"],
-    abstract: "Measuring elite preferences from roll-call votes is appealing, but because ideal points result from applying a statistical model to a model of choice, their usefulness for testing theories of politics is not automatic. A review of what roll-call estimates can and cannot support.",
+    abstract: "Measuring the preferences of political elites is critically important for analyzing the determinants and consequences of elite behavior. The decisions that elites make when casting roll call votes seem to provide an ideal opportunity for measuring elite preferences and testing theories of the political process. The fact that the resulting ideal points are a consequence of applying a statistical model to a model of individual choice, however, may affect their usefulness for measuring elite preferences and testing predictions regarding individual and collective decision making. When analyzing roll call votes, scholars should be mindful of how their decisions may affect the estimates from their analyses. I use simulations to illustrate how the nonrandom selection of roll calls may affect the ability to estimate ideal points that accurately reflect the preferences responsible for generating the observed votes, and I discuss work integrating the many models involved in the production and consumption of roll call estimates.",
     links: { pdf: "assets/papers/C_AR2012.pdf", doi: "https://doi.org/10.1146/annurev-polisci-043010-095836" }
   },
   {
@@ -442,7 +442,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Simon Jackman",
     venue: "Legislative Studies Quarterly", year: 2009, type: "article", featured: false,
     topics: ["methodology", "Congress"],
-    abstract: "Comparing NOMINATE and Bayesian quadratic-normal approaches to ideal-point estimation, we argue the more flexible Bayesian approach is generally preferable for the broad array of questions it can address.",
+    abstract: "Carroll et al. (2009) summarize the similarities and differences between the NOMINATE and IDEAL methods of fitting spatial voting models to binary roll-call data. As those authors note, for the class of problems with which either NOMINATE and the Bayesian quadratic-normal model can be used, the ideal point estimates almost always coincide, and when they do not, the discrepancy is due to the somewhat arbitrary identification and computational constraints imposed by each method. There are, however, many problems for which the Bayesian quadratic-normal model can be easily generalized, so as to address a broad array of questions and take advantage of additional data. Given the nature and source of the differences between NOMINATE and the Bayesian approach—as well as the fact that both approaches are approximations of the decision-making processes being modeled—we believe that it is preferable to choose the more flexible Bayesian approach.",
     links: { pdf: "assets/papers/CJ_LSQ2009.pdf", doi: "https://doi.org/10.3162/036298009789869691" }
   },
   {
@@ -450,7 +450,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, John Lapinski",
     venue: "Legislative Studies Quarterly", year: 2008, type: "article", featured: false,
     topics: ["Congress", "methodology"],
-    abstract: "Because only a small share of enacted statutes ever receive a recorded vote, we question the assumption that roll-call activity reflects lawmaking activity and offer guidance on when voting behavior is a reasonable proxy.",
+    abstract: "Recent empirical studies of lawmaking activity by legislatures rely heavily on roll call based measures and assume that roll call activity reflects lawmaking activity. We question this assumption for the case of the U.S. Congress. We examine several plausible sources of dissonance between the set of enacted public statutes and the universe of recorded votes in the U.S. Congress, using a comprehensive dataset of public enactments and roll call activity between 1891 and 1994. Because only 11.9% of the bills signed into law receive a recorded vote in the House, only 7.9% receive a recorded vote in the Senate, and only 5.5% receive a recorded vote in both the House and Senate, we provide guidance as to when studying voting behavior is likely a reasonable proxy for lawmaking behavior. There are sometimes important differences between the laws that do and do not receive a roll call that researchers should account for when using roll calls to study lawmaking in the U.S. Congress.",
     links: { pdf: "assets/papers/CL_LSQ2008.pdf", doi: "https://doi.org/10.3162/036298008786403097" }
   },
   {
@@ -458,7 +458,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Scott Ashworth, Adam Meirowitz, Kristopher W. Ramsay",
     venue: "American Political Science Review", year: 2008, type: "article", featured: false,
     topics: ["methodology"],
-    abstract: "We show that Pape’s suicide-terrorism data cannot support his conclusions because they sample on the dependent variable, and we construct bounds showing how little can be learned about the relevant associations from that research design.",
+    abstract: "In “The Strategic Logic of Suicide Terrorism,” Robert Pape (2003) presents an analysis of his suicide terrorism data. He uses the data to draw inferences about how territorial occupation and religious extremism affect the decision of terrorist groups to use suicide tactics. We show that the data are incapable of supporting Pape's conclusions because he “samples on the dependent variable”—the data only contain cases in which suicide terror is used. We construct bounds (Manski, 1995) on the quantities relevant to Pape's hypotheses and show exactly how little can be learned about the relevant statistical associations from the data produced by Pape's research design.",
     links: { pdf: "assets/papers/ACMR2008.pdf", doi: "https://doi.org/10.1017/s0003055408080167" }
   },
   {
@@ -466,7 +466,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, David E. Lewis",
     venue: "Political Analysis", year: 2008, type: "article", featured: false,
     topics: ["methodology", "Congress"],
-    abstract: "We propose a multirater item-response method for measuring the policy preferences of 82 executive agencies, combining subjective expert ratings with objective agency characteristics.",
+    abstract: "The study of bureaucracies and their relationship to political actors is central to understanding the policy process in the United States. Studying this aspect of American politics is difficult because theories of agency behavior, effectiveness, and control often require measures of administrative agencies' policy preferences, and appropriate measures are hard to find for a broad spectrum of agencies. We propose a method for measuring agency preferences based upon an expert survey of agency preferences for 82 executive agencies in existence between 1988 and 2005. We use a multirater item response model to provide a principled structure for combining subjective ratings based on scholarly and journalistic expertise with objective data on agency characteristics. We compare the resulting agency preference estimates and standard errors to existing alternative measures, discussing both the advantages and limitations of the method.",
     links: { pdf: "assets/papers/CL_PA2007.pdf", doi: "https://doi.org/10.1093/pan/mpm009" }
   },
   {
@@ -474,7 +474,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton",
     venue: "Journal of Politics", year: 2007, type: "article", featured: false,
     topics: ["Congress", "methodology"],
-    abstract: "Embedding the predictions of party-gatekeeping and veto-pivot theories within a statistical ideal-point model yields a direct test; implementing it reveals little support for either theory.",
+    abstract: "The ability to generate theories of lawmaking has not been matched by an ability to evaluate the success of these theories for explaining legislative reality. The principal problem in testing lawmaking theories is that many analysts use roll-call votes—or various measures based on roll-call votes—when, in fact, these votes are partly a cause and partly a consequence of the very things the theories seek to explain. This can lead to erroneous substantive conclusions and characterizations. I show how embedding the theoretical predictions of the party gatekeeping and veto pivot theories of lawmaking within a statistical model used to estimate ideal points yields a straightforward test; if the gridlock interval measured using votes on policies predicted by the theories is nonzero, the predictions of the theory are not supported by the observed data and assumed behavioral voting model. Implementing the test reveals little support for either theory.",
     links: { pdf: "assets/papers/C_JOP2007.pdf", doi: "https://doi.org/10.1111/j.1468-2508.2007.00543.x" }
   },
   {
@@ -482,7 +482,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Scott Ashworth",
     venue: "Quarterly Journal of Political Science", year: 2007, type: "article", featured: false,
     topics: ["elections"],
-    abstract: "Using residence in battleground states as an exogenous source of variation in 2000 campaign-ad exposure, we find no evidence that exposure significantly increased turnout, a result robust across specifications.",
+    abstract: "We identify an exogenous source of variation in exposure to campaign advertising in the 2000 presidential election, based on residence in battleground states. If exposure to campaign advertising makes a potential voter significantly more likely to vote, then we should see significantly greater turnout in battleground states. We do not. This result is robust to several specifications and evident in a natural experiment consisting of New Jersey residents. Conditional on existing campaign targeting strategies, campaigns do not affect the turnout decisions of the voters we study.",
     links: { pdf: "assets/papers/AC_QJPS2007.pdf", doi: "https://doi.org/10.1561/100.00005051" }
   },
   {
@@ -490,7 +490,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton",
     venue: "Journal of Politics", year: 2006, type: "article", featured: true,
     topics: ["Congress", "public opinion"],
-    abstract: "Aggregating 100,814 respondents to measure subconstituency preferences, I show representatives are not fully responsive to the district mean, and that only majority-party Republicans are especially responsive to same-party constituents.",
+    abstract: "This paper examines the extent to which constituency and subconstituency preferences are reflected in roll-call voting in the 106th House. Aggregating 100,814 randomly selected respondents to measure subconstituency preferences provides an unprecedented ability to measure subconstituency preferences in the House. Looking at the relationship over all votes, “key votes,” and on individual votes confirms that representatives are not completely responsive to the district mean voter, that only majority party Republicans are especially responsive to the preferences of same-party constituents, and that same-party constituency preferences cannot entirely account for systematic differences in Republican and Democratic voting behavior.",
     links: { pdf: "assets/papers/C_JOP2006.pdf", doi: "https://doi.org/10.1111/j.1468-2508.2006.00415.x" }
   },
   {
@@ -498,7 +498,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, John Lapinski",
     venue: "American Journal of Political Science", year: 2006, type: "article", featured: false,
     topics: ["Congress", "methodology"],
-    abstract: "Combining item-response theory with a dataset of every public statute enacted between 1877 and 1994, we estimate legislative significance across time, providing new opportunities to analyze U.S. policymaking since 1877.",
+    abstract: "Understanding the dynamics of lawmaking in the United States is at the center of the study of American politics. A fundamental obstacle to progress in this pursuit is the lack of measures of policy output, especially for the period prior to 1946. The lack of direct legislative accomplishment measures makes it difficult to assess the performance of our political system. We provide a new measure of legislative significance and accomplishment. Specifically, we demonstrate how item-response theory can be combined with a new dataset that contains every public statute enacted between 1877 and 1994 to estimate “legislative importance” across time. Although the resulting estimates and associated standard errors provide new opportunities for scholars interested in analyzing U.S. policymaking since 1877, the methodology we present is not restricted to Congress, the United States, or lawmaking.",
     links: { pdf: "assets/papers/CL_AJPS2006.pdf", doi: "https://doi.org/10.1111/j.1540-5907.2006.00181.x" }
   },
   {
@@ -506,7 +506,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Simon Jackman, Doug Rivers",
     venue: "American Political Science Review", year: 2004, type: "article", featured: true,
     topics: ["methodology", "Congress"],
-    abstract: "We develop a flexible Bayesian procedure for estimation and inference in spatial models of roll-call voting, applicable to any legislative setting and extensible to incorporate party whipping, agenda evolution, and the determinants of preferences.",
+    abstract: "We develop a Bayesian procedure for estimation and inference for spatial models of roll call voting. This approach is extremely flexible, applicable to any legislative setting, irrespective of size, the extremism of the legislators' voting histories, or the number of roll calls available for analysis. The model is easily extended to let other sources of information inform the analysis of roll call data, such as the number and nature of the underlying dimensions, the presence of party whipping, the determinants of legislator preferences, and the evolution of the legislative agenda; this is especially helpful since generally it is inappropriate to use estimates of extant methods (usually generated under assumptions of sincere voting) to test models embodying alternate assumptions (e.g., log-rolling, party discipline). A Bayesian approach also provides a coherent framework for estimation and inference with roll call data that eludes extant methods; moreover, via Bayesian simulation methods, it is straightforward to generate uncertainty assessments or hypothesis tests concerning any auxiliary quantity of interest or to formally compare models. In a series of examples we show how our method is easily extended to accommodate theoretically interesting models of legislative behavior. Our goal is to provide a statistical framework for combining the measurement of legislative preferences with tests of models of legislative behavior.",
     links: { pdf: "assets/papers/CJR_APSR2004.pdf", doi: "https://doi.org/10.1017/s0003055404001194" }
   },
   {
@@ -515,7 +515,7 @@ const PUBLICATIONS = [
     venue: "American Journal of Political Science", year: 2004, type: "article", featured: false,
     topics: ["Congress", "methodology"],
     award: "Winner, 2002 Robert H. Durr Award.",
-    abstract: "We present a method that unifies theory, history, and measurement, then use first-Congress voting data to subject the traditional account of the Compromise of 1790 to a statistical test, finding reason to doubt it.",
+    abstract: "A difficult yet prevalent problem in legislative politics is how to assess explanations when observable actions may not represent true (and unobserved) legislator preferences. We present a method for analyzing the validity of theoretical/historical accounts that unifies theory, history, and measurement. We argue that approaches to testing accounts of legislative behavior which are theoretically and historically agnostic are not always best and present an approach which: (1) forms an explicit explanation of behavior (here a simple dynamic voting game) that yields estimable parameter constraints, and (2) tests these constraints using a customized empirical model that is as consistent as possible with the explanation. We demonstrate the method using legislative voting data from the first Congress (1789–1791). Using the idea of sophisticated equivalents from voting theory we subject the traditional account of the “Compromise of 1790” to a statistical test and find that there is reason to doubt the claim that legislators of the time believed the specified log roll was taking place. The results suggest that the capital location and assumption issues were resolved independently.",
     links: { pdf: "assets/papers/CM_AJPS2004.pdf", doi: "https://doi.org/10.1111/j.0092-5853.2004..x" }
   },
   {
@@ -523,7 +523,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, John Lapinski",
     venue: "Journal of Politics", year: 2004, type: "article", featured: false,
     topics: ["elections"],
-    abstract: "In an experiment with more than 10,200 eligible voters, we find no evidence that negative advertising decreases turnout; any effect depends on the message and the viewer.",
+    abstract: "Scholars disagree whether negative advertising demobilizes or stimulates the electorate. We use an experiment with over 10,200 eligible voters to evaluate the two leading hypotheses of negative political advertising. We extend the analysis to examine whether advertising differentially impacts the turnout of voter subpopulations depending on the advertisement's message. In the short term, we find no evidence that exposure to negative advertisements decreases turnout and little that suggests it increases turnout. Any effect appears to depend upon the message of the advertisement and the characteristics of the viewer. In the long term, we find little evidence that the information contained in the treatment groups' advertisements is sufficient to systematically alter turnout.",
     links: { pdf: "assets/papers/CL_JOP2004.pdf", doi: "https://doi.org/10.1046/j.1468-2508.2004.00142.x" }
   },
   {
@@ -539,7 +539,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Adam Meirowitz",
     venue: "Political Analysis", year: 2003, type: "article", featured: false,
     topics: ["methodology", "Congress"],
-    abstract: "We argue theory and methods are better integrated by embedding maintained and tested hypotheses directly in the statistical model used to estimate legislator preferences, demonstrated on the Powell amendment.",
+    abstract: "Scholars of legislative studies typically use ideal point estimates from scaling procedures to test theories of legislative politics. We contend that theory and methods may be better integrated by directly incorporating maintained and to be tested hypotheses in the statistical model used to estimate legislator preferences. In this view of theory and estimation, formal modeling (1) provides auxiliary assumptions that serve as constraints in the estimation process, and (2) generates testable predictions. The estimation and hypothesis testing procedure uses roll call data to evaluate the validity of theoretically derived to be tested hypotheses in a world where maintained hypotheses are presumed true. We articulate the approach using the language of statistical inference (both frequentist and Bayesian). The approach is demonstrated in analyses of the well-studied Powell amendment to the federal aid-to-education bill in the 84th House and the Compromise of 1790 in the 1st House.",
     links: { pdf: "assets/papers/CM_PA2003.pdf", doi: "https://doi.org/10.1093/pan/mpg023" }
   },
   {
@@ -547,7 +547,7 @@ const PUBLICATIONS = [
     authors: "Joshua D. Clinton, Adam Meirowitz",
     venue: "Political Analysis", year: 2001, type: "article", featured: false,
     topics: ["methodology", "Congress"],
-    abstract: "Existing preference-estimation procedures ignore the sequential structure of the agenda; we show how using it improves identification and the recovery of proposal and preference locations.",
+    abstract: "Existing preference estimation procedures do not incorporate the full structure of the spatial model of voting, as they fail to use the sequential nature of the agenda. In the maximum likelihood framework, the consequences of this omission may be far-reaching. First, information useful for the identification of the model is neglected. Specifically, information that identifies the proposal locations is ignored. Second, the dimensionality of the policy space may be incorrectly estimated. Third, preference and proposal location estimates are incorrect and difficult to interpret in terms of the spatial model. We also show that the Bayesian simulation approach to ideal point estimation (Clinton et al. 2000; Jackman 2000) may be improved through the use of information about the legislative agenda. This point is illustrated by comparing several preference estimators of the first U.S. House (1789–1791).",
     links: { pdf: "assets/papers/CM_PA2001.pdf", doi: "https://doi.org/10.1093/polana/9.3.242" }
   },
 
@@ -558,7 +558,7 @@ const PUBLICATIONS = [
     venue: "in Artificial Intelligence, Politics, and Political Science (Persily & Tucker, eds.), Cambridge University Press",
     year: 2026, type: "chapter", featured: false, isbn: "9781047774734",
     topics: ["polling", "public opinion", "data science"],
-    abstract: "A report of the APSA Task Force on Artificial Intelligence, chaired by Clinton, on what artificial intelligence means for the measurement and interpretation of public opinion.",
+    abstract: "The study of public opinion occupies an uneasy space between theory and measurement, referring simultaneously to a latent set of beliefs held by members of a political community and to the responses elicited through imperfect, context-sensitive instruments. The integration of AI into public opinion research makes this tension unavoidable. AI offers tools that are faster, cheaper, and more flexible than anything available, but the effects also extend further in ways that can blur distinctions between measuring and manufacturing opinion. AI raises questions the field has long grappled with: What exactly is public opinion, and what counts as evidence of it? Whether AI enriches or distorts the study of public opinion depends on choices that are as much theoretical as technical. In the limit, substituting AI-generated responses for human voices risks a form of epistemic collapse in which public opinion research loses its anchor to the people it purports to represent.",
     links: { pdf: "assets/papers/Cetal_APSAAI_2026.pdf", doi: "https://preprints.apsanet.org/engage/apsa/article-details/69fcc22b810b9dcc82e24669" }
   },
   {
@@ -567,7 +567,7 @@ const PUBLICATIONS = [
     venue: "in Causal Inference and American Political Development (Jenkins, ed.), Springer",
     year: 2024, type: "chapter", featured: false,
     topics: ["Congress", "methodology"],
-    abstract: "Using fixed effects and members serving in consecutive Congresses, I isolate the effect of a changing agenda from compositional change to ask how well roll calls detect majority-party agenda setting.",
+    abstract: "How well can roll calls detect the causal impact of majority party agenda setting in the House of Representatives? Estimating the counterfactual required to assess the effects of majority party agenda setting is complicated by time-varying differences in the political environment and the fact that measures commonly used to control for compositional changes are themselves endogenous to the congressional agenda. To isolate the effect of agenda changes due to changes in majority status from compositional changes in the members who are serving I evaluate how the congressional agenda affects coalitions of members serving in consecutive Congresses. Using fixed effects to account for time-varying differences between consecutive Congresses and looking at the effect on members who serve in both Congresses helps isolate the effects of the changing agenda using several measures with clear theoretical predictions. Characterizing the overall pattern as well as the variation over time and by various issues both highlights the challenge of consistently estimating the effects of agenda control while also demonstrating that patterns consistent with agenda control are a relatively recent phenomenon. The time-varying evidence of patterns consistent with partisan agenda control raises important questions about how to interpret seemingly similar levels of elite polarization across time and how different processes may be responsible for similar levels of polarized voting.",
     links: { pdf: "assets/papers/Clinton2024_PublicChoiceRevised.pdf", doi: "https://doi.org/10.1007/978-3-031-74913-1_12" }
   },
   {
@@ -603,7 +603,7 @@ const PUBLICATIONS = [
     venue: "in The Oxford Handbook of American Political Development",
     year: 2016, type: "chapter", featured: false,
     topics: ["public opinion", "Congress"],
-    abstract: "An essay on political representation for the Oxford Handbook of American Political Development.",
+    abstract: "We examine the history of political representation in the United States using a multi-stage statistical analysis of the changing relationship between roll call votes in the US House of Representatives and the preferences of citizens (as measured by presidential votes). We show that members of Congress have become considerably more responsive to constituents’ preferences over the past 40 years, reversing a half-century drought in responsiveness stemming from the South’s one-party Jim Crow era. However, the House as a whole has become less representative, veering too far left when Democrats are in the majority and too far right when Republicans are.",
     links: { pdf: "assets/papers/Representation Bartels Clinton Geer.pdf", doi: "https://doi.org/10.1093/oxfordhb/9780199697915.013.16" }
   },
   {
