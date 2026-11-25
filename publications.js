@@ -72,6 +72,14 @@ const PUBLICATIONS = [
     links: {}
   },
   {
+    title: "Inferring Donor Motivations from Portfolio Choice: The Importance of Electoral and Ideological Motivations for Individual General Election Donors, 1998–2022",
+    authors: "Joshua D. Clinton, Seth J. Hill, Gregory A. Huber, Mackenzie Lockhart",
+    venue: "", year: 2026, type: "working", featured: false,
+    status: "Working paper",
+    topics: ["elections"],
+    links: {}
+  },
+  {
     title: "Prediction Markets? The Accuracy and Efficiency of Political Prediction Markets in the 2024 Presidential Election",
     authors: "Joshua D. Clinton, TzuFeng Huang",
     venue: "", year: 2026, type: "working", featured: false,
