@@ -39,11 +39,12 @@ const PUBLICATIONS = [
   },
   {
     title: "AI Pandering: Constructing Diverging Political Realities through Conversation",
-    authors: "Joshua D. Clinton, Jim Bisbee, Jennifer Larson, Da In Lee",
+    authors: "James Bisbee, Joshua D. Clinton, Jennifer M. Larson, Diana Da In Lee",
     venue: "", year: 2026, type: "working", featured: false,
     status: "Revise and resubmit, Nature Communications",
     topics: ["data science", "public opinion", "methodology"],
-    links: { doi: "https://preprints.apsanet.org/engage/apsa/article-details/69a746f6810b9dcc82e0c5b0" }
+    abstract: "We audit two leading systems, ChatGPT and Grok, to test whether chatbots present systematically different political realities to users with distinct inferred ideologies. Using large language model–powered confederates that adopt varied political personas without explicitly stating their ideology, we conduct multi-turn conversations about immigration, election integrity, and vaccine safety. We find consistent evidence of ideological pandering in which chatbots adapt their epistemic posture—agreement, validation, and confidence in factual claims—to inferred user ideology.",
+    links: { pdf: "assets/papers/BCLL_AIPandering.pdf", doi: "https://preprints.apsanet.org/engage/apsa/article-details/69a746f6810b9dcc82e0c5b0" }
   },
   {
     title: "Prediction Markets? The Accuracy and Efficiency of Political Prediction Markets in the 2024 Presidential Election",
