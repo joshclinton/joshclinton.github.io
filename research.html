@@ -164,7 +164,7 @@ function renderPapers() {
     const flag = flagText ? `<span class="paper-flag">${flagText}</span>` : "";
     const meta = isWP(p)
       ? `${p.authors}${p.status ? ` · <span class="venue">${p.status}</span>` : ""}`
-      : `${p.authors} · <span class="venue">${p.venue}</span>, ${p.year}`;
+      : `${p.authors} · <span class="venue">${p.venue}</span>, ${p.year}${p.isbn ? ` · ISBN ${p.isbn}` : ""}`;
     return `<article class="paper ${p.featured ? "is-featured" : ""}">
       ${flag}
       ${titleEl}

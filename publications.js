@@ -498,11 +498,11 @@ const PUBLICATIONS = [
   {
     title: "Public Opinion in the Age of AI",
     authors: "Joshua D. Clinton (Chair), Soubhik Barari, Ethan Busby, Trent D. Buskirk, Raymond Duch, Anna-Carolina Haensch, D. Sunshine Hillygus, Courtney Kennedy, Kevin Munger, Douglas Rivers, Sean Westwood",
-    venue: "APSA Task Force on Artificial Intelligence; in Artificial Intelligence, Politics and Political Science (Persily & Tucker, eds.), Cambridge University Press",
-    year: 2026, type: "chapter", featured: false,
+    venue: "in Artificial Intelligence, Politics, and Political Science (Persily & Tucker, eds.), Cambridge University Press",
+    year: 2026, type: "chapter", featured: false, isbn: "9781047774734",
     topics: ["polling", "public opinion", "data science"],
     abstract: "A report of the APSA Task Force on Artificial Intelligence, chaired by Clinton, on what artificial intelligence means for the measurement and interpretation of public opinion.",
-    links: { pdf: "assets/papers/Cetal_APSAPublicOpinion2026.docx.pdf", doi: "https://preprints.apsanet.org/engage/apsa/article-details/69fcc22b810b9dcc82e24669" }
+    links: { pdf: "assets/papers/Cetal_APSAAI_2026.pdf", doi: "https://preprints.apsanet.org/engage/apsa/article-details/69fcc22b810b9dcc82e24669" }
   },
   {
     title: "Roll Calls, Voting Coalitions, and Possible Agenda Control in the U.S. House of Representatives, 1869–2024",
