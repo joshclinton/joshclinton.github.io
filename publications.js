@@ -34,7 +34,6 @@ const PUBLICATIONS = [
     venue: "", year: 2026, type: "working", featured: false,
     status: "Forthcoming, Nature",
     topics: ["public opinion", "polling", "data science"],
-    abstract: "Artificial intelligence (AI) is rapidly transforming survey research, the primary means of measuring public opinion. In this Perspective, we shift attention from broad claims about the promise or peril of AI to the conditions under which it strengthens or compromises public opinion research. We argue that standards for transparency and disclosure are essential for the responsible integration of AI into survey research.",
     links: {}
   },
   {
